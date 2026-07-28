@@ -1,0 +1,17 @@
+# NfeSefazPISOutr
+
+Código de Situação Tributária do PIS.  * 99 - Outras Operações
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**cst** | **str** | Código de Situação Tributária do PIS.  * 99 - Outras Operações | 
+**v_bc** | **float** | Valor da BC do PIS. | [optional] 
+**p_pis** | **float** | Alíquota do PIS (em percentual). | [optional] 
+**q_bc_prod** | **float** | Quantidade Vendida (NT2011/004). | [optional] 
+**v_aliq_prod** | **float** | Alíquota do PIS (em reais) (NT2011/004). | [optional] 
+**v_pis** | **float** | Valor do PIS. | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

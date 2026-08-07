@@ -1,20 +1,21 @@
 # RpsDadosTomadorEndereco
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**logradouro** | **str** | Logradouro. | [optional] 
-**numero** | **str** | Número. | [optional] 
-**complemento** | **str** | Complemento. | [optional] 
-**bairro** | **str** | Bairro. | [optional] 
-**codigo_municipio** | **str** | Código IBGE do município. | [optional] 
-**cidade** | **str** | Cidade. | [optional] 
-**uf** | **str** | Sigla do estado. | [optional] 
-**codigo_pais** | **str** |  | [optional] [default to '1058']
-**pais** | **str** | Nome do país. | [optional] 
-**cep** | **str** | CEP.  Utilize o valor sem máscara. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**logradouro** | **str** | Logradouro. | [opcional] 
+**numero** | **str** | Número. | [opcional] 
+**complemento** | **str** | Complemento. | [opcional] 
+**bairro** | **str** | Bairro. | [opcional] 
+**codigo_municipio** | **str** | Código IBGE do município. | [opcional] 
+**cidade** | **str** | Cidade. | [opcional] 
+**uf** | **str** | Sigla do estado. | [opcional] 
+**codigo_pais** | **str** |  | [opcional] [default '1058']
+**pais** | **str** | Nome do país. | [opcional] 
+**cep** | **str** | CEP.  Utilize o valor sem máscara. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

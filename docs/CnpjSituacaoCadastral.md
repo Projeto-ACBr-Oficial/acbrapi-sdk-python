@@ -2,13 +2,14 @@
 
 Situação cadastral.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **date** | Data do evento da situação cadastral. | [optional] 
-**codigo** | **str** | Código da situação cadastral. | [optional] 
-**descricao** | **str** | Descrição da situação cadastral. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**data** | **date** | Data do evento da situação cadastral. | [opcional] 
+**codigo** | **str** | Código da situação cadastral. | [opcional] 
+**descricao** | **str** | Descrição da situação cadastral. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

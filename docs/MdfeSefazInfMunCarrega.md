@@ -2,12 +2,13 @@
 
 Informações dos Municípios de Carregamento.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **c_mun_carrega** | **str** | Código do Município de Carregamento. | 
 **x_mun_carrega** | **str** | Nome do Município de Carregamento. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

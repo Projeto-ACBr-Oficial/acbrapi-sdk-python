@@ -3313,7 +3313,7 @@ class NfeApi(object):
     def criar_carta_correcao_nfe(self, id, body, **kwargs):  # noqa: E501
         """Solicitar correção da NF-e  # noqa: E501
 
-        É possível enviar até 20 correções diferentes, sendo que será válido sempre a última correção enviada.    **Informações adicionais**:  - Consumo: 1 unidade por requisição.  # noqa: E501
+        é possível enviar até 20 correções diferentes, sendo que será válido sempre a última correção enviada.    **Informações adicionais**:  - Consumo: 1 unidade por requisição.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -3345,7 +3345,7 @@ class NfeApi(object):
     def criar_carta_correcao_nfe_with_http_info(self, id, body, **kwargs):  # noqa: E501
         """Solicitar correção da NF-e  # noqa: E501
 
-        É possível enviar até 20 correções diferentes, sendo que será válido sempre a última correção enviada.    **Informações adicionais**:  - Consumo: 1 unidade por requisição.  # noqa: E501
+        é possível enviar até 20 correções diferentes, sendo que será válido sempre a última correção enviada.    **Informações adicionais**:  - Consumo: 1 unidade por requisição.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 

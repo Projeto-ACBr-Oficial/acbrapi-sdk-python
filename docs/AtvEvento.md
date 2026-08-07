@@ -2,17 +2,18 @@
 
 Grupo de informações do DPS relativas à Evento.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**x_nome** | **str** | Descrição do evento Artístico, Cultural, Esportivo, etc. | [optional] 
-**desc** | **str** | &#x60;Deprecated&#x60;    **Propriedade depreciada**.    *Utilize &#x60;xNome&#x60;*. | [optional] 
+**x_nome** | **str** | Descrição do evento Artístico, Cultural, Esportivo, etc. | [opcional] 
+**desc** | **str** | &#x60;Deprecated&#x60;    **Propriedade depreciada**.    *Utilize &#x60;xNome&#x60;*. | [opcional] 
 **dt_ini** | **date** | Data de início da atividade de evento. Ano, Mês e Dia (AAAA-MM-DD). | 
 **dt_fim** | **date** | Data de fim da atividade de evento. Ano, Mês e Dia (AAAA-MM-DD). | 
-**id_atv_evt** | **str** | Identificação da Atividade de Evento (código identificador de evento determinado pela Administração Tributária Municipal). | [optional] 
-**id** | **str** | &#x60;Deprecated&#x60;    **Propriedade depreciada**.    *Utilize &#x60;idAtvEvt&#x60;*. | [optional] 
-**end** | [**EnderecoSimples**](EnderecoSimples.md) |  | [optional] 
+**id_atv_evt** | **str** | Identificação da Atividade de Evento (código identificador de evento determinado pela Administração Tributária Municipal). | [opcional] 
+**id** | **str** | &#x60;Deprecated&#x60;    **Propriedade depreciada**.    *Utilize &#x60;idAtvEvt&#x60;*. | [opcional] 
+**end** | [**EnderecoSimples**](EnderecoSimples.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

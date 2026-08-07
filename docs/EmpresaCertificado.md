@@ -1,20 +1,21 @@
 # EmpresaCertificado
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** |  | [optional] 
-**created_at** | **datetime** |  | [optional] 
-**serial_number** | **str** |  | [optional] 
-**issuer_name** | **str** |  | [optional] 
-**not_valid_before** | **datetime** |  | [optional] 
-**not_valid_after** | **datetime** |  | [optional] 
-**thumbprint** | **str** |  | [optional] 
-**subject_name** | **str** |  | [optional] 
-**cpf_cnpj** | **str** |  | [optional] 
-**nome_razao_social** | **str** |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**id** | **str** |  | [opcional] 
+**created_at** | **datetime** |  | [opcional] 
+**serial_number** | **str** |  | [opcional] 
+**issuer_name** | **str** |  | [opcional] 
+**not_valid_before** | **datetime** |  | [opcional] 
+**not_valid_after** | **datetime** |  | [opcional] 
+**thumbprint** | **str** |  | [opcional] 
+**subject_name** | **str** |  | [opcional] 
+**cpf_cnpj** | **str** |  | [opcional] 
+**nome_razao_social** | **str** |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

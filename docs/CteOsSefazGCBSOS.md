@@ -2,16 +2,17 @@
 
 Grupo de Tributação da CBS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **p_cbs** | **float** | Aliquota da CBS (em percentual). | 
-**g_dif** | [**CteOsSefazDifOS**](CteOsSefazDifOS.md) |  | [optional] 
-**g_dev_trib** | [**CteOsSefazDevTribOS**](CteOsSefazDevTribOS.md) |  | [optional] 
-**g_red** | [**CteOsSefazRedOS**](CteOsSefazRedOS.md) |  | [optional] 
-**g_alczfmcbs** | [**CteOsSefazALCZFMCBSOS**](CteOsSefazALCZFMCBSOS.md) |  | [optional] 
+**g_dif** | [**CteOsSefazDifOS**](CteOsSefazDifOS.md) |  | [opcional] 
+**g_dev_trib** | [**CteOsSefazDevTribOS**](CteOsSefazDevTribOS.md) |  | [opcional] 
+**g_red** | [**CteOsSefazRedOS**](CteOsSefazRedOS.md) |  | [opcional] 
+**g_alczfmcbs** | [**CteOsSefazALCZFMCBSOS**](CteOsSefazALCZFMCBSOS.md) |  | [opcional] 
 **v_cbs** | **float** | Valor da CBS. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

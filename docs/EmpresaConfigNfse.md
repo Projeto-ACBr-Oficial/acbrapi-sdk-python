@@ -1,15 +1,16 @@
 # EmpresaConfigNfse
 
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**reg_trib** | [**EmpresaConfigNfseRegTrib**](EmpresaConfigNfseRegTrib.md) |  | [optional] 
+**reg_trib** | [**EmpresaConfigNfseRegTrib**](EmpresaConfigNfseRegTrib.md) |  | [opcional] 
 **rps** | [**EmpresaConfigRps**](EmpresaConfigRps.md) |  | 
-**prefeitura** | [**EmpresaConfigPrefeitura**](EmpresaConfigPrefeitura.md) |  | [optional] 
-**incentivo_fiscal** | **bool** | Indicador se a empresa possui algum tipo de incentivo fiscal. | [optional] [default to False]
+**prefeitura** | [**EmpresaConfigPrefeitura**](EmpresaConfigPrefeitura.md) |  | [opcional] 
+**incentivo_fiscal** | **bool** | Indicador se a empresa possui algum tipo de incentivo fiscal. | [opcional] [default False]
 **ambiente** | **str** | Indica se a empresa irá emitir em produção ou homologação. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

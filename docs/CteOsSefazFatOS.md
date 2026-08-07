@@ -2,14 +2,15 @@
 
 Dados da fatura.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**n_fat** | **str** | Número da fatura. | [optional] 
-**v_orig** | **float** | Valor original da fatura. | [optional] 
-**v_desc** | **float** | Valor do desconto da fatura. | [optional] 
-**v_liq** | **float** | Valor líquido da fatura. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**n_fat** | **str** | Número da fatura. | [opcional] 
+**v_orig** | **float** | Valor original da fatura. | [opcional] 
+**v_desc** | **float** | Valor do desconto da fatura. | [opcional] 
+**v_liq** | **float** | Valor líquido da fatura. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

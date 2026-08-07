@@ -1,15 +1,16 @@
 # DfeSincronizacao
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**status** | **str** | Situação atual da sincronização. | [optional] 
-**codigo_status** | **int** | Código da situação atual do DF-e. | [optional] 
-**motivo_status** | **str** | Descrição literal da situação atual do DF-e. | [optional] 
-**data_recebimento** | **datetime** | Data e hora de processamento. | [optional] 
-**chave** | **str** | Chave de Acesso do DF-e consultado. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**status** | **str** | Situação atual da sincronização. | [opcional] 
+**codigo_status** | **int** | Código da situação atual do DF-e. | [opcional] 
+**motivo_status** | **str** | Descrição literal da situação atual do DF-e. | [opcional] 
+**data_recebimento** | **datetime** | Data e hora de processamento. | [opcional] 
+**chave** | **str** | Chave de Acesso do DF-e consultado. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

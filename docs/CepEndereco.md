@@ -1,18 +1,19 @@
 # CepEndereco
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**bairro** | **str** |  | [optional] 
-**cep** | **str** |  | [optional] 
-**codigo_ibge** | **str** |  | [optional] 
-**complemento** | **str** |  | [optional] 
-**logradouro** | **str** |  | [optional] 
-**municipio** | **str** |  | [optional] 
-**tipo_logradouro** | **str** |  | [optional] 
-**uf** | **str** |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**bairro** | **str** |  | [opcional] 
+**cep** | **str** |  | [opcional] 
+**codigo_ibge** | **str** |  | [opcional] 
+**complemento** | **str** |  | [opcional] 
+**logradouro** | **str** |  | [opcional] 
+**municipio** | **str** |  | [opcional] 
+**tipo_logradouro** | **str** |  | [opcional] 
+**uf** | **str** |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

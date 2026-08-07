@@ -2,15 +2,16 @@
 
 Informações dos tributos federais.  Grupo a ser informado nas prestações interestaduais para consumidor final, não contribuinte do ICMS.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**v_pis** | **float** | Valor do PIS. | [optional] 
-**v_cofins** | **float** | Valor COFINS. | [optional] 
-**v_ir** | **float** | Valor de Imposto de Renda. | [optional] 
-**v_inss** | **float** | Valor do INSS. | [optional] 
-**v_csll** | **float** | Valor do CSLL. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**v_pis** | **float** | Valor do PIS. | [opcional] 
+**v_cofins** | **float** | Valor COFINS. | [opcional] 
+**v_ir** | **float** | Valor de Imposto de Renda. | [opcional] 
+**v_inss** | **float** | Valor do INSS. | [opcional] 
+**v_csll** | **float** | Valor do CSLL. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

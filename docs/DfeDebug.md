@@ -1,14 +1,15 @@
 # DfeDebug
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador do documento fiscal. | [optional] 
-**tipo** | **str** | Tipo do documento: nfe, nfce, mdfe, nfse, etc. | [optional] 
-**created_at** | **datetime** | Data e hora da criação do documento, representada no formato UTC (Tempo Universal Coordenado).  O valor é retornado no padrão ISO 8601, incluindo o deslocamento de fuso horário &#39;Z&#39; no final.    Exemplo: \&quot;2025-04-15T14:16:47.775Z\&quot; | [optional] 
-**requisicoes** | [**list[DfeRequisicaoDebug]**](DfeRequisicaoDebug.md) | Lista de requisições feitas ao autorizador durante o processamento. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**id** | **str** | Identificador do documento fiscal. | [opcional] 
+**tipo** | **str** | Tipo do documento: nfe, nfce, mdfe, nfse, etc. | [opcional] 
+**created_at** | **datetime** | Data e hora da criação do documento, representada no formato UTC (Tempo Universal Coordenado).  O valor é retornado no padrão ISO 8601, incluindo o deslocamento de fuso horário &#39;Z&#39; no final.    Exemplo: \&quot;2025-04-15T14:16:47.775Z\&quot; | [opcional] 
+**requisicoes** | [**list[DfeRequisicaoDebug]**](DfeRequisicaoDebug.md) | Lista de requisições feitas ao autorizador durante o processamento. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

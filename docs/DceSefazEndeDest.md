@@ -2,12 +2,13 @@
 
 Endereço do destinatário / assinante.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **x_lgr** | **str** | Logradouro. | 
 **nro** | **str** | Número. | 
-**x_cpl** | **str** | Complemento. | [optional] 
+**x_cpl** | **str** | Complemento. | [opcional] 
 **x_bairro** | **str** | Bairro. | 
 **c_mun** | **str** | Código do município (utilizar a tabela do IBGE). | 
 **x_mun** | **str** | Nome do município. | 
@@ -15,9 +16,9 @@ Name | Type | Description | Notes
 **cep** | **str** | CEP.  Informar zeros não significativos. | 
 **c_pais** | **str** | Código do país.  Utilizar a tabela do BACEN. | 
 **x_pais** | **str** | Nome do país. | 
-**fone** | **str** | Telefone. | [optional] 
-**email** | **str** | Endereço de E-mail. | [optional] 
+**fone** | **str** | Telefone. | [opcional] 
+**email** | **str** | Endereço de E-mail. | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

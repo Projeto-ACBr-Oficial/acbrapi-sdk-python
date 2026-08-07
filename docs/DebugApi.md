@@ -1,8 +1,8 @@
 # acbrapi_sdk.DebugApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**debug_dfe**](DebugApi.md#debug_dfe) | **GET** /debug/{id} | Debug de DF-e
 [**debug_dfe_original_payload**](DebugApi.md#debug_dfe_original_payload) | **GET** /debug/{id}/original-payload | Payload original recebido
@@ -17,9 +17,9 @@ Debug de DF-e
 
 Este endpoint retorna informações detalhadas de debug sobre o processamento de um documento fiscal eletrônico (DFe),  como NF-e, NFC-e, MDF-e, CT-e, NFS-e, dentre outros. Ele permite inspecionar o conteúdo original enviado à API e analisar  todas as interações realizadas com os serviços autorizadores (SEFAZ ou prefeituras) durante o fluxo de emissão.    **Informações retornadas**:  - JSON original recebido no momento da criação do documento.  - Histórico das etapas de envio e consulta.  - Status e mensagens retornadas pelo autorizador.    **Cenários de uso**:  - Diagnóstico de falhas no processamento do documento.  - Verificação da resposta da SEFAZ ou prefeitura.  - Apoio ao suporte técnico e análise de integração.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -43,9 +43,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.DebugApi(api_client)
     id = 'id_example' # str | ID único do documento fiscal gerado pela API.
 
@@ -54,34 +54,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.debug_dfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling DebugApi->debug_dfe: %s\n" % e)
+        print("Excecao ao chamar DebugApi->debug_dfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do documento fiscal gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeDebug**](DfeDebug.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **debug_dfe_original_payload**
 > file debug_dfe_original_payload(id)
@@ -90,9 +90,9 @@ Payload original recebido
 
 Este endpoint retorna o conteúdo original recebido pela API no momento da criação do documento fiscal.    **Cenários de uso**:  - Inspeção detalhada dos dados enviados à API.  - Verificação de divergências entre o payload fornecido e o processado.  - Encaminhamento do conteúdo original ao suporte da API.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -116,9 +116,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.DebugApi(api_client)
     id = 'id_example' # str | ID do documento fiscal gerado pela API.
 
@@ -127,34 +127,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.debug_dfe_original_payload(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling DebugApi->debug_dfe_original_payload: %s\n" % e)
+        print("Excecao ao chamar DebugApi->debug_dfe_original_payload: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID do documento fiscal gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **debug_http_request_content**
 > file debug_http_request_content(id)
@@ -163,9 +163,9 @@ Corpo da requisição HTTP
 
 Este endpoint retorna apenas o corpo da requisição HTTP enviada ao autorizador,  preservando o conteúdo exatamente como foi armazenado pela API.    **Informações retornadas**:  - Envelope SOAP da requisição, possivelmente compactado.    **Cenários de uso**:  - Verificação do XML ou SOAP efetivamente enviado.  - Encaminhamento ao suporte da SEFAZ ou prefeitura para análise.  - Diagnóstico técnico do conteúdo de envio.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -189,9 +189,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.DebugApi(api_client)
     id = 'id_example' # str | ID da requisição HTTP.
 
@@ -200,34 +200,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.debug_http_request_content(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling DebugApi->debug_http_request_content: %s\n" % e)
+        print("Excecao ao chamar DebugApi->debug_http_request_content: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID da requisição HTTP. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **debug_http_response_content**
 > file debug_http_response_content(id)
@@ -236,9 +236,9 @@ Corpo da resposta HTTP
 
 Este endpoint retorna apenas o corpo da resposta HTTP recebida do autorizador,  permitindo análise técnica da mensagem retornada pela SEFAZ ou prefeitura.    **Informações retornadas**:  - Envelope SOAP da resposta, ou mensagem de erro (ex: HTML, XML), no formato original.    **Cenários de uso**:  - Inspeção da resposta real retornada pelo autorizador.  - Encaminhamento do conteúdo ao suporte técnico.  - Diagnóstico de rejeições, falhas de processamento ou erros de infraestrutura.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -262,9 +262,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.DebugApi(api_client)
     id = 'id_example' # str | ID da requisição HTTP.
 
@@ -273,32 +273,32 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.debug_http_response_content(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling DebugApi->debug_http_response_content: %s\n" % e)
+        print("Excecao ao chamar DebugApi->debug_http_response_content: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID da requisição HTTP. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

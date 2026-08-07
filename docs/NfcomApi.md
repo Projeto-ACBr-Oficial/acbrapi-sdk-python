@@ -1,8 +1,8 @@
 # acbrapi_sdk.NfcomApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**baixar_pdf_nfcom**](NfcomApi.md#baixar_pdf_nfcom) | **GET** /nfcom/{id}/pdf | Baixar PDF do DANFE-COM
 [**baixar_xml_cancelamento_nfcom**](NfcomApi.md#baixar_xml_cancelamento_nfcom) | **GET** /nfcom/{id}/cancelamento/xml | Baixar XML do cancelamento
@@ -22,9 +22,9 @@ Method | HTTP request | Description
 
 Baixar PDF do DANFE-COM
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -48,47 +48,47 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerado pela API.
-logotipo = False # bool | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. (optional) (default to False)
+logotipo = False # bool | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. (opcional) (default False)
 
     try:
         # Baixar PDF do DANFE-COM
         api_response = api_instance.baixar_pdf_nfcom(id, logotipo=logotipo)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->baixar_pdf_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->baixar_pdf_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerado pela API. | 
- **logotipo** | **bool**| Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional] [default to False]
+ **logotipo** | **bool**| Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [opcional] [default False]
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_cancelamento_nfcom**
 > file baixar_xml_cancelamento_nfcom(id)
@@ -97,9 +97,9 @@ Baixar XML do cancelamento
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -123,9 +123,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -134,34 +134,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_cancelamento_nfcom(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->baixar_xml_cancelamento_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->baixar_xml_cancelamento_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_nfcom**
 > file baixar_xml_nfcom(id)
@@ -170,9 +170,9 @@ Baixar XML da NFCom processada
 
 Utilize esse endpoint para obter o XML da nota enviada para a SEFAZ, complementado com a informação do protocolo de autorização de uso (TAG raiz `nfcomProc`).    O XML só estará disponível nesse endpoint caso a nota tenha sido autorizada pela SEFAZ. Para obter o XML nos demais casos, utilize o endpoint `GET /nfcom/{id}/xml/nota`.    **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -196,9 +196,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -207,34 +207,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_nfcom(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->baixar_xml_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->baixar_xml_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_nfcom_nota**
 > file baixar_xml_nfcom_nota(id)
@@ -243,9 +243,9 @@ Baixar XML da NFCom
 
 Utilize esse endpoint para obter o XML da nota enviada para a SEFAZ.    O XML estará disponível nesse endpoint mesmo em casos que a nota tenha sido rejeitada.    **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -269,9 +269,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -280,34 +280,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_nfcom_nota(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->baixar_xml_nfcom_nota: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->baixar_xml_nfcom_nota: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_nfcom_protocolo**
 > file baixar_xml_nfcom_protocolo(id)
@@ -316,9 +316,9 @@ Baixar XML do Protocolo da SEFAZ
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -342,9 +342,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -353,34 +353,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_nfcom_protocolo(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->baixar_xml_nfcom_protocolo: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->baixar_xml_nfcom_protocolo: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **cancelar_nfcom**
 > DfeCancelamento cancelar_nfcom(id, body=body)
@@ -389,9 +389,9 @@ Cancelar uma NFCom autorizada
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -415,56 +415,56 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
-body = acbrapi_sdk.NfcomPedidoCancelamento() # NfcomPedidoCancelamento |  (optional)
+body = acbrapi_sdk.NfcomPedidoCancelamento() # NfcomPedidoCancelamento |  (opcional)
 
     try:
         # Cancelar uma NFCom autorizada
         api_response = api_instance.cancelar_nfcom(id, body=body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->cancelar_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->cancelar_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
- **body** | [**NfcomPedidoCancelamento**](NfcomPedidoCancelamento.md)|  | [optional] 
+ **body** | [**NfcomPedidoCancelamento**](NfcomPedidoCancelamento.md)|  | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeCancelamento**](DfeCancelamento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_cancelamento_nfcom**
 > DfeCancelamento consultar_cancelamento_nfcom(id)
 
 Consultar o cancelamento da NFCom
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -488,9 +488,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -499,34 +499,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_cancelamento_nfcom(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->consultar_cancelamento_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->consultar_cancelamento_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeCancelamento**](DfeCancelamento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_nfcom**
 > Dfe consultar_nfcom(id)
@@ -535,9 +535,9 @@ Consultar NFCom
 
 Consulta os detalhes de uma NFCom já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de NFCom e a API irá retornar as informações da NFCom correspondente.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -561,9 +561,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     id = 'id_example' # str | ID único da NFCom gerada pela API.
 
@@ -572,34 +572,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_nfcom(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->consultar_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->consultar_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFCom gerada pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**Dfe**](Dfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_status_sefaz_nfcom**
 > DfeSefazStatus consultar_status_sefaz_nfcom(cpf_cnpj, autorizador=autorizador)
@@ -608,9 +608,9 @@ Consulta do Status do Serviço na SEFAZ Autorizadora
 
 Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -634,47 +634,47 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF/CNPJ do emitente.  Utilize o valor sem máscara.
-autorizador = 'autorizador_example' # str | Ambiente Autorizador.    Autorizadores disponíveis: `SVRS`.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* (optional)
+autorizador = 'autorizador_example' # str | Ambiente Autorizador.    Autorizadores disponíveis: `SVRS`.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* (opcional)
 
     try:
         # Consulta do Status do Serviço na SEFAZ Autorizadora
         api_response = api_instance.consultar_status_sefaz_nfcom(cpf_cnpj, autorizador=autorizador)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->consultar_status_sefaz_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->consultar_status_sefaz_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF/CNPJ do emitente.  Utilize o valor sem máscara. | 
- **autorizador** | **str**| Ambiente Autorizador.    Autorizadores disponíveis: &#x60;SVRS&#x60;.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* | [optional] 
+ **autorizador** | **str**| Ambiente Autorizador.    Autorizadores disponíveis: &#x60;SVRS&#x60;.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeSefazStatus**](DfeSefazStatus.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **emitir_nfcom**
 > Dfe emitir_nfcom(body)
@@ -683,9 +683,9 @@ Emitir NFCom
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -709,9 +709,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     body = acbrapi_sdk.NfcomPedidoEmissao() # NfcomPedidoEmissao | 
 
@@ -720,34 +720,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.emitir_nfcom(body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->emitir_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->emitir_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **body** | [**NfcomPedidoEmissao**](NfcomPedidoEmissao.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**Dfe**](Dfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_nfcom**
 > DfeListagem listar_nfcom(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia, chave=chave, serie=serie)
@@ -756,9 +756,9 @@ Listar NFCom
 
 Retorna a lista de NFCom de acordo com os critérios de busca utilizados. As NFCom são retornadas ordenadas pela data da criação, com as mais recentes aparecendo primeiro.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -782,57 +782,57 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfcomApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | Filtrar pelo CPF ou CNPJ do emitente.    Utilize o valor sem máscara.
 ambiente = 'ambiente_example' # str | Identificação do Ambiente.    Valores aceitos: homologacao, producao
-top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (optional) (default to 10)
-skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (optional) (default to 0)
-inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (optional) (default to False)
-referencia = 'referencia_example' # str | Seu identificador único para o documento. (optional)
-chave = 'chave_example' # str | Chave de acesso do DF-e. (optional)
-serie = 'serie_example' # str | Série do DF-e. (optional)
+top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (opcional) (default 10)
+skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (opcional) (default 0)
+inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (opcional) (default False)
+referencia = 'referencia_example' # str | Seu identificador único para o documento. (opcional)
+chave = 'chave_example' # str | Chave de acesso do DF-e. (opcional)
+serie = 'serie_example' # str | Série do DF-e. (opcional)
 
     try:
         # Listar NFCom
         api_response = api_instance.listar_nfcom(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia, chave=chave, serie=serie)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling NfcomApi->listar_nfcom: %s\n" % e)
+        print("Excecao ao chamar NfcomApi->listar_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| Filtrar pelo CPF ou CNPJ do emitente.    Utilize o valor sem máscara. | 
  **ambiente** | **str**| Identificação do Ambiente.    Valores aceitos: homologacao, producao | 
- **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional] [default to 10]
- **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional] [default to 0]
- **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional] [default to False]
- **referencia** | **str**| Seu identificador único para o documento. | [optional] 
- **chave** | **str**| Chave de acesso do DF-e. | [optional] 
- **serie** | **str**| Série do DF-e. | [optional] 
+ **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [opcional] [default 10]
+ **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [opcional] [default 0]
+ **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [opcional] [default False]
+ **referencia** | **str**| Seu identificador único para o documento. | [opcional] 
+ **chave** | **str**| Chave de acesso do DF-e. | [opcional] 
+ **serie** | **str**| Série do DF-e. | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeListagem**](DfeListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

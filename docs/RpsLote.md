@@ -1,17 +1,18 @@
 # RpsLote
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | ID único do lote gerado automaticamente pela API. | [optional] 
-**created_at** | **datetime** |  | [optional] 
-**status** | **str** |  | [optional] 
-**numero** | **str** |  | [optional] 
-**ambiente** | **str** |  | [optional] 
-**referencia** | **str** |  | [optional] 
-**notas** | [**list[Nfse]**](Nfse.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**id** | **str** | ID único do lote gerado automaticamente pela API. | [opcional] 
+**created_at** | **datetime** |  | [opcional] 
+**status** | **str** |  | [opcional] 
+**numero** | **str** |  | [opcional] 
+**ambiente** | **str** |  | [opcional] 
+**referencia** | **str** |  | [opcional] 
+**notas** | [**list[Nfse]**](Nfse.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

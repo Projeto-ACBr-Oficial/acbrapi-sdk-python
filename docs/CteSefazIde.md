@@ -2,25 +2,26 @@
 
 Identificação do CT-e.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **c_uf** | **int** | Código da UF do emitente do CT-e.  Utilizar a Tabela do IBGE. | 
-**c_ct** | **str** | Código numérico que compõe a Chave de Acesso.  Número aleatório gerado pelo emitente para cada CT-e, com o objetivo de evitar acessos indevidos ao documento.    *Geramos automaticamente quando nenhum valor é informado.* | [optional] 
+**c_ct** | **str** | Código numérico que compõe a Chave de Acesso.  Número aleatório gerado pelo emitente para cada CT-e, com o objetivo de evitar acessos indevidos ao documento.    *Geramos automaticamente quando nenhum valor é informado.* | [opcional] 
 **cfop** | **str** | Código Fiscal de Operações e Prestações. | 
 **nat_op** | **str** | Natureza da Operação. | 
-**mod** | **int** | Modelo do documento fiscal.  Utilizar o código 57 para identificação do CT-e, emitido em substituição aos modelos de conhecimentos em papel. | [optional] 
+**mod** | **int** | Modelo do documento fiscal.  Utilizar o código 57 para identificação do CT-e, emitido em substituição aos modelos de conhecimentos em papel. | [opcional] 
 **serie** | **int** | Série do CT-e.  Preencher com \&quot;0\&quot; no caso de série única. | 
 **n_ct** | **int** | Número do CT-e. | 
 **dh_emi** | **datetime** | Data e hora de emissão do CT-e.  Formato AAAA-MM-DDTHH:MM:DD TZD. | 
 **tp_imp** | **int** | Formato de impressão do DACTE:  * 1 - Retrato  * 2 - Paisagem | 
 **tp_emis** | **int** | Forma de emissão do CT-e.  Preencher com:  * 1 - Normal  * 3 - Regime Especial NFF  * 4 - EPEC pela SVC  * 5 - Contingência FSDA  * 7 - Autorização pela SVC-RS  * 8 - Autorização pela SVC-SP | 
-**c_dv** | **int** | Digito Verificador da chave de acesso do CT-e.  Informar o dígito  de controle da chave de acesso do CT-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso.    *Geramos automaticamente quando nenhum valor é informado.* | [optional] 
-**tp_amb** | **int** | Tipo do Ambiente:  * 1 - Produção  * 2 - Homologação | [optional] 
+**c_dv** | **int** | Digito Verificador da chave de acesso do CT-e.  Informar o dígito  de controle da chave de acesso do CT-e, que deve ser calculado com a aplicação do algoritmo módulo 11 (base 2,9) da chave de acesso.    *Geramos automaticamente quando nenhum valor é informado.* | [opcional] 
+**tp_amb** | **int** | Tipo do Ambiente:  * 1 - Produção  * 2 - Homologação | [opcional] 
 **tp_cte** | **int** | Tipo do CT-e.  Preencher com:  * 0 - CT-e Normal  * 1 - CT-e de Complemento de Valores  * 3 - CT-e de Substituição | 
 **proc_emi** | **int** | Identificador do processo de emissão do CTe.  Preencher com:  * 0 - emissão de CTe com aplicativo do contribuinte  * 3 - emissão CTe pelo contribuinte com aplicativo fornecido pelo SEBRAE  * 4 - emissão de CTe por Provedor de Assinatura e Autorização - PAA | 
 **ver_proc** | **str** | Versão do processo de emissão.  Iinformar a versão do aplicativo emissor de CT-e. | 
-**ind_globalizado** | **int** | Indicador de CT-e Globalizado.  Informar valor 1 quando for Globalizado e não informar a tag quando não tratar de CT-e Globalizado. | [optional] 
+**ind_globalizado** | **int** | Indicador de CT-e Globalizado.  Informar valor 1 quando for Globalizado e não informar a tag quando não tratar de CT-e Globalizado. | [opcional] 
 **c_mun_env** | **str** | Código do Município de envio do CT-e (de onde o documento foi transmitido).  Utilizar a tabela do IBGE. Informar 9999999 para as operações com o exterior. | 
 **x_mun_env** | **str** | Nome do Município de envio do CT-e (de onde o documento foi transmitido).  Informar PAIS/Municipio para as operações com o exterior. | 
 **uf_env** | **str** | Sigla da UF de envio do CT-e (de onde o documento foi transmitido).  Informar &#39;EX&#39; para operações com o exterior. | 
@@ -33,16 +34,16 @@ Name | Type | Description | Notes
 **x_mun_fim** | **str** | Nome do Município do término da prestação.  Informar &#39;EXTERIOR&#39; para operações com o exterior. | 
 **uf_fim** | **str** | UF do término da prestação.  Informar &#39;EX&#39; para operações com o exterior. | 
 **retira** | **int** | Indicador se o Recebedor retira no Aeroporto, Filial, Porto ou Estação de Destino? Preencher com:  * 0 - Sim  * 1 - Não | 
-**x_det_retira** | **str** | Detalhes do retira. | [optional] 
+**x_det_retira** | **str** | Detalhes do retira. | [opcional] 
 **ind_ie_toma** | **int** | Indicador do papel do tomador na prestação do serviço:  * 1 - Contribuinte ICMS  * 2 - Contribuinte isento de inscrição  * 9 - Não Contribuinte  Aplica-se ao tomador que for indicado no toma3 ou toma4. | 
-**toma3** | [**CteSefazToma3**](CteSefazToma3.md) |  | [optional] 
-**toma4** | [**CteSefazToma4**](CteSefazToma4.md) |  | [optional] 
-**dh_cont** | **datetime** | Data e Hora da entrada em contingência.  Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS. | [optional] 
-**x_just** | **str** | Justificativa da entrada em contingência. | [optional] 
-**g_compra_gov** | [**CteSefazCompraGovReduzido**](CteSefazCompraGovReduzido.md) |  | [optional] 
-**tp_pag_ant** | **int** | Tipo Pagamento ou Pagamento Antecipado.  Informar:  * 1 - Pagamento Antecipado  * 3 - Fornecimento com pagamento realizado anteriormente  Este campo é opcional e apenas deve ser informado quando pagamento que ocorre antes da prestação do serviço e na DFe de fornecimento associada a esses pagamentos, demais hipóteses de prestação de serviço sem antecipação não devem preencher. | [optional] 
-**g_pag_antecipado** | [**CteSefazGPagAntecipado**](CteSefazGPagAntecipado.md) |  | [optional] 
+**toma3** | [**CteSefazToma3**](CteSefazToma3.md) |  | [opcional] 
+**toma4** | [**CteSefazToma4**](CteSefazToma4.md) |  | [opcional] 
+**dh_cont** | **datetime** | Data e Hora da entrada em contingência.  Informar a data e hora no formato AAAA-MM-DDTHH:MM:SS. | [opcional] 
+**x_just** | **str** | Justificativa da entrada em contingência. | [opcional] 
+**g_compra_gov** | [**CteSefazCompraGovReduzido**](CteSefazCompraGovReduzido.md) |  | [opcional] 
+**tp_pag_ant** | **int** | Tipo Pagamento ou Pagamento Antecipado.  Informar:  * 1 - Pagamento Antecipado  * 3 - Fornecimento com pagamento realizado anteriormente  Este campo é opcional e apenas deve ser informado quando pagamento que ocorre antes da prestação do serviço e na DFe de fornecimento associada a esses pagamentos, demais hipóteses de prestação de serviço sem antecipação não devem preencher. | [opcional] 
+**g_pag_antecipado** | [**CteSefazGPagAntecipado**](CteSefazGPagAntecipado.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

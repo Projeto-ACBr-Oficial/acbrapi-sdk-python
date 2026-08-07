@@ -1,13 +1,14 @@
 # MdfeDocumentoVinculado
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**codigo_municipio_descarga** | **str** | Código do Município de descarregamento. | [optional] 
-**municipio_descarga** | **str** | Nome do Município de descarregamento. | [optional] 
-**chave_acesso_nfe** | **str** | Chave de acesso da NF-e. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**codigo_municipio_descarga** | **str** | Código do Município de descarregamento. | [opcional] 
+**municipio_descarga** | **str** | Nome do Município de descarregamento. | [opcional] 
+**chave_acesso_nfe** | **str** | Chave de acesso da NF-e. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

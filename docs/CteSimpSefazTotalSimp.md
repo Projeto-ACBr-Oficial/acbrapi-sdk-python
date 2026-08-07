@@ -2,13 +2,14 @@
 
 Valores Totais do CTe.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **v_t_prest** | **float** | Valor Total da Prestação do Serviço.  Pode conter zeros quando o CT-e for de complemento de ICMS. | 
 **v_t_rec** | **float** | Valor total a Receber. | 
-**v_tot_dfe** | **float** | Valor total do documento fiscal  (vTPrest + total do IBS + total da CBS). | [optional] 
+**v_tot_dfe** | **float** | Valor total do documento fiscal  (vTPrest + total do IBS + total da CBS). | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

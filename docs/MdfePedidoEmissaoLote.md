@@ -1,14 +1,15 @@
 # MdfePedidoEmissaoLote
 
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**documentos** | [**list[MdfePedidoEmissao]**](MdfePedidoEmissao.md) |  | [optional] 
+**documentos** | [**list[MdfePedidoEmissao]**](MdfePedidoEmissao.md) |  | [opcional] 
 **ambiente** | **str** | Identificação do Ambiente. | 
-**referencia** | **str** | Seu identificador para este documento. Opcional, ajuda a evitar o envio duplicado de um mesmo documento. | [optional] 
+**referencia** | **str** | Seu identificador para este documento. Opcional, ajuda a evitar o envio duplicado de um mesmo documento. | [opcional] 
 **id_lote** | **str** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

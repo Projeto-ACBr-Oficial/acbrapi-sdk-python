@@ -1,25 +1,26 @@
 # CteCartaCorrecao
 
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **correcoes** | [**list[CteInfCorrecao]**](CteInfCorrecao.md) | Grupo de Informações de Correção. | 
-**id** | **str** | ID único gerado pela API para este evento. | [optional] 
-**ambiente** | **str** | Identificação do ambiente. | [optional] 
-**status** | **str** | Status do Evento. | [optional] 
-**autor** | [**DfeAutorEvento**](DfeAutorEvento.md) |  | [optional] 
-**chave_acesso** | **str** | Chave de Acesso do documento vinculado ao evento. | [optional] 
-**data_evento** | **datetime** | Data e hora do Evento. | [optional] 
-**numero_sequencial** | **int** | Sequencial do evento para o mesmo tipo de evento. | [optional] 
-**data_recebimento** | **datetime** | Data e hora do recebimento do Evento pela SEFAZ. | [optional] 
-**codigo_status** | **int** | Código do status de registro do Evento. | [optional] 
-**motivo_status** | **str** | Descrição literal do status do registro do Evento. | [optional] 
-**numero_protocolo** | **str** | Número do Protocolo de registro do Evento. | [optional] 
-**codigo_mensagem** | **int** | Código da Mensagem. | [optional] 
-**mensagem** | **str** | Mensagem da SEFAZ para o emissor. | [optional] 
-**tipo_evento** | **str** |  | [optional] 
+**id** | **str** | ID único gerado pela API para este evento. | [opcional] 
+**ambiente** | **str** | Identificação do ambiente. | [opcional] 
+**status** | **str** | Status do Evento. | [opcional] 
+**autor** | [**DfeAutorEvento**](DfeAutorEvento.md) |  | [opcional] 
+**chave_acesso** | **str** | Chave de Acesso do documento vinculado ao evento. | [opcional] 
+**data_evento** | **datetime** | Data e hora do Evento. | [opcional] 
+**numero_sequencial** | **int** | Sequencial do evento para o mesmo tipo de evento. | [opcional] 
+**data_recebimento** | **datetime** | Data e hora do recebimento do Evento pela SEFAZ. | [opcional] 
+**codigo_status** | **int** | Código do status de registro do Evento. | [opcional] 
+**motivo_status** | **str** | Descrição literal do status do registro do Evento. | [opcional] 
+**numero_protocolo** | **str** | Número do Protocolo de registro do Evento. | [opcional] 
+**codigo_mensagem** | **int** | Código da Mensagem. | [opcional] 
+**mensagem** | **str** | Mensagem da SEFAZ para o emissor. | [opcional] 
+**tipo_evento** | **str** |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

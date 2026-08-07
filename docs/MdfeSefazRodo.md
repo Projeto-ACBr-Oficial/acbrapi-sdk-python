@@ -2,15 +2,16 @@
 
 Informações do modal Rodoviário.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**inf_antt** | [**MdfeSefazInfANTT**](MdfeSefazInfANTT.md) |  | [optional] 
-**veic_tracao** | [**MdfeSefazVeicTracao**](MdfeSefazVeicTracao.md) |  | 
-**veic_reboque** | [**list[MdfeSefazVeicReboque]**](MdfeSefazVeicReboque.md) |  | [optional] 
-**cod_ag_porto** | **str** | Código de Agendamento no porto. | [optional] 
-**lac_rodo** | [**list[MdfeSefazLacRodo]**](MdfeSefazLacRodo.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**inf_antt** | [**MdfeSefazInfANTT**](MdfeSefazInfANTT.md) |  | [opcional] 
+**veic_tracao** | [**MdfeSefazVeicTracao**](MdfeSefazVeicTracao.md) |  | 
+**veic_reboque** | [**list[MdfeSefazVeicReboque]**](MdfeSefazVeicReboque.md) |  | [opcional] 
+**cod_ag_porto** | **str** | Código de Agendamento no porto. | [opcional] 
+**lac_rodo** | [**list[MdfeSefazLacRodo]**](MdfeSefazLacRodo.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

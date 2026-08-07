@@ -2,20 +2,21 @@
 
 Endereço da empresa.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **logradouro** | **str** | Logradouro. | 
 **numero** | **str** | Número. | 
-**complemento** | **str** | Complemento. | [optional] 
+**complemento** | **str** | Complemento. | [opcional] 
 **bairro** | **str** | Bairro. | 
 **codigo_municipio** | **str** | Código IBGE do município. | 
-**cidade** | **str** | Cidade. | [optional] 
+**cidade** | **str** | Cidade. | [opcional] 
 **uf** | **str** | Sigla do estado. | 
-**codigo_pais** | **str** | Código do país. | [optional] [default to '1058']
-**pais** | **str** | Nome do país. | [optional] [default to 'Brasil']
+**codigo_pais** | **str** | Código do país. | [opcional] [default '1058']
+**pais** | **str** | Nome do país. | [opcional] [default 'Brasil']
 **cep** | **str** | CEP.    *Utilize o valor sem máscara*. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

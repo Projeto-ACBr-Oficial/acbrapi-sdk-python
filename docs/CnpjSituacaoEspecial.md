@@ -2,13 +2,14 @@
 
 Situação especial da empresa.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | **date** | Data em que a empresa entrou em situação especial. | [optional] 
-**codigo** | **str** | Código da situação especial da empresa. | [optional] 
-**descricao** | **str** | Descrição da situação especial da empresa. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**data** | **date** | Data em que a empresa entrou em situação especial. | [opcional] 
+**codigo** | **str** | Código da situação especial da empresa. | [opcional] 
+**descricao** | **str** | Descrição da situação especial da empresa. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,12 +2,13 @@
 
 Natureza jurídica.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**codigo** | **str** | Código da natureza jurídica. | [optional] 
-**descricao** | **str** | Nome da natureza jurídica. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**codigo** | **str** | Código da natureza jurídica. | [opcional] 
+**descricao** | **str** | Nome da natureza jurídica. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,8 +2,9 @@
 
 Totalização do IBS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **g_ibsuf** | [**NfeSefazGIBSGIBSUF**](NfeSefazGIBSGIBSUF.md) |  | 
 **g_ibs_mun** | [**NfeSefazGIBSGIBSMun**](NfeSefazGIBSGIBSMun.md) |  | 
@@ -11,6 +12,6 @@ Name | Type | Description | Notes
 **v_cred_pres** | **float** | Total do Crédito Presumido. | 
 **v_cred_pres_cond_sus** | **float** | Total do Crédito Presumido Condição Suspensiva. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

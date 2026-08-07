@@ -2,14 +2,15 @@
 
 Dados do COFINS.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cofins_aliq** | [**NfeSefazCOFINSAliq**](NfeSefazCOFINSAliq.md) |  | [optional] 
-**cofins_qtde** | [**NfeSefazCOFINSQtde**](NfeSefazCOFINSQtde.md) |  | [optional] 
-**cofinsnt** | [**NfeSefazCOFINSNT**](NfeSefazCOFINSNT.md) |  | [optional] 
-**cofins_outr** | [**NfeSefazCOFINSOutr**](NfeSefazCOFINSOutr.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cofins_aliq** | [**NfeSefazCOFINSAliq**](NfeSefazCOFINSAliq.md) |  | [opcional] 
+**cofins_qtde** | [**NfeSefazCOFINSQtde**](NfeSefazCOFINSQtde.md) |  | [opcional] 
+**cofinsnt** | [**NfeSefazCOFINSNT**](NfeSefazCOFINSNT.md) |  | [opcional] 
+**cofins_outr** | [**NfeSefazCOFINSOutr**](NfeSefazCOFINSOutr.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

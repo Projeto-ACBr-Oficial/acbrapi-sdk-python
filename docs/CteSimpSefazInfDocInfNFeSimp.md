@@ -2,12 +2,13 @@
 
 Informações das NFe.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **chave** | **str** | Chave de acesso da NF-e. | 
-**unid_rat** | **float** | Unidade de medida rateada (Peso,Volume). | [optional] 
+**unid_rat** | **float** | Unidade de medida rateada (Peso,Volume). | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,12 +2,13 @@
 
 Informações das GTV-e relacionadas ao CT-e OS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **ch_cte** | **str** | Chave de acesso da GTV-e. | 
 **comp** | [**list[CteOsSefazInfGTVeCompOS]**](CteOsSefazInfGTVeCompOS.md) |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

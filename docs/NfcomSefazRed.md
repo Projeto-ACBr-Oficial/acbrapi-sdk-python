@@ -2,12 +2,13 @@
 
 Grupo de campos da redução de aliquota.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **p_red_aliq** | **float** | Percentual de redução de aliquota do cClassTrib. | 
 **p_aliq_efet** | **float** | Aliquota Efetiva que será aplicada a Base de Calculo (em percentual). | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

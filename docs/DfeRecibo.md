@@ -1,16 +1,17 @@
 # DfeRecibo
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**numero** | **str** | Número do Recibo | [optional] 
-**codigo_status** | **int** | Código do status da mensagem enviada. | [optional] 
-**motivo_status** | **str** | Descrição literal do status do serviço solicitado. | [optional] 
-**data_recebimento** | **datetime** | Data e hora de processamento. | [optional] 
-**codigo_mensagem** | **int** | Código da Mensagem. | [optional] 
-**mensagem** | **str** | Mensagem da SEFAZ para o emissor. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**numero** | **str** | Número do Recibo | [opcional] 
+**codigo_status** | **int** | Código do status da mensagem enviada. | [opcional] 
+**motivo_status** | **str** | Descrição literal do status do serviço solicitado. | [opcional] 
+**data_recebimento** | **datetime** | Data e hora de processamento. | [opcional] 
+**codigo_mensagem** | **int** | Código da Mensagem. | [opcional] 
+**mensagem** | **str** | Mensagem da SEFAZ para o emissor. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

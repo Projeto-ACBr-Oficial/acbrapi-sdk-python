@@ -2,15 +2,16 @@
 
 Informações adicionais da NF-e.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco (v2.0). | [optional] 
-**inf_cpl** | **str** | Informações complementares de interesse do Contribuinte. | [optional] 
-**obs_cont** | [**list[NfeSefazInfAdicObsCont]**](NfeSefazInfAdicObsCont.md) |  | [optional] 
-**obs_fisco** | [**list[NfeSefazInfAdicObsFisco]**](NfeSefazInfAdicObsFisco.md) |  | [optional] 
-**proc_ref** | [**list[NfeSefazProcRef]**](NfeSefazProcRef.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco (v2.0). | [opcional] 
+**inf_cpl** | **str** | Informações complementares de interesse do Contribuinte. | [opcional] 
+**obs_cont** | [**list[NfeSefazInfAdicObsCont]**](NfeSefazInfAdicObsCont.md) |  | [opcional] 
+**obs_fisco** | [**list[NfeSefazInfAdicObsFisco]**](NfeSefazInfAdicObsFisco.md) |  | [opcional] 
+**proc_ref** | [**list[NfeSefazProcRef]**](NfeSefazProcRef.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,12 +2,13 @@
 
 Campo de uso exclusivo do Fisco  informar o nome do campo no atributo xCampo  e o conteúdo do campo no xTexto.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**x_campo** | **str** |  | [optional] 
-**x_texto** | **str** |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**x_campo** | **str** |  | [opcional] 
+**x_texto** | **str** |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

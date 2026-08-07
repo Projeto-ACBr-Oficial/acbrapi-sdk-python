@@ -2,12 +2,13 @@
 
 Identificação da Transportadora (uso exclusivo Transportadora).
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **cnpj** | **str** | Número do CNPJ da Transportadora. | 
 **x_nome** | **str** | Razão Social ou Nome da Transportadora. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

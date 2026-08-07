@@ -2,17 +2,18 @@
 
 Informações relativas aos Impostos.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **icms** | [**CteOsSefazImpOS**](CteOsSefazImpOS.md) |  | 
-**v_tot_trib** | **float** | Valor Total dos Tributos. | [optional] 
-**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [optional] 
-**icmsuf_fim** | [**CteOsSefazICMSUFFimOS**](CteOsSefazICMSUFFimOS.md) |  | [optional] 
-**inf_trib_fed** | [**CteOsSefazInfTribFedOS**](CteOsSefazInfTribFedOS.md) |  | [optional] 
-**ibscbs** | [**CteOsSefazTribCTeOS**](CteOsSefazTribCTeOS.md) |  | [optional] 
-**v_tot_dfe** | **float** | Valor total do documento fiscal  (vTPrest + total do IBS + total da CBS). | [optional] 
+**v_tot_trib** | **float** | Valor Total dos Tributos. | [opcional] 
+**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [opcional] 
+**icmsuf_fim** | [**CteOsSefazICMSUFFimOS**](CteOsSefazICMSUFFimOS.md) |  | [opcional] 
+**inf_trib_fed** | [**CteOsSefazInfTribFedOS**](CteOsSefazInfTribFedOS.md) |  | [opcional] 
+**ibscbs** | [**CteOsSefazTribCTeOS**](CteOsSefazTribCTeOS.md) |  | [opcional] 
+**v_tot_dfe** | **float** | Valor total do documento fiscal  (vTPrest + total do IBS + total da CBS). | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

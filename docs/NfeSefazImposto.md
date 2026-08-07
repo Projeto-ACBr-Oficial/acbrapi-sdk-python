@@ -2,22 +2,23 @@
 
 Tributos incidentes nos produtos ou serviços da NF-e.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**v_tot_trib** | **float** | Valor estimado total de impostos federais, estaduais e municipais. | [optional] 
-**icms** | [**NfeSefazICMS**](NfeSefazICMS.md) |  | [optional] 
-**ipi** | [**NfeSefazIpi**](NfeSefazIpi.md) |  | [optional] 
-**ii** | [**NfeSefazII**](NfeSefazII.md) |  | [optional] 
-**issqn** | [**NfeSefazISSQN**](NfeSefazISSQN.md) |  | [optional] 
-**pis** | [**NfeSefazPIS**](NfeSefazPIS.md) |  | [optional] 
-**pisst** | [**NfeSefazPISST**](NfeSefazPISST.md) |  | [optional] 
-**cofins** | [**NfeSefazCOFINS**](NfeSefazCOFINS.md) |  | [optional] 
-**cofinsst** | [**NfeSefazCOFINSST**](NfeSefazCOFINSST.md) |  | [optional] 
-**icmsuf_dest** | [**NfeSefazICMSUFDest**](NfeSefazICMSUFDest.md) |  | [optional] 
-**_is** | [**NfeSefazIS**](NfeSefazIS.md) |  | [optional] 
-**ibscbs** | [**NfeSefazTribNFe**](NfeSefazTribNFe.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**v_tot_trib** | **float** | Valor estimado total de impostos federais, estaduais e municipais. | [opcional] 
+**icms** | [**NfeSefazICMS**](NfeSefazICMS.md) |  | [opcional] 
+**ipi** | [**NfeSefazIpi**](NfeSefazIpi.md) |  | [opcional] 
+**ii** | [**NfeSefazII**](NfeSefazII.md) |  | [opcional] 
+**issqn** | [**NfeSefazISSQN**](NfeSefazISSQN.md) |  | [opcional] 
+**pis** | [**NfeSefazPIS**](NfeSefazPIS.md) |  | [opcional] 
+**pisst** | [**NfeSefazPISST**](NfeSefazPISST.md) |  | [opcional] 
+**cofins** | [**NfeSefazCOFINS**](NfeSefazCOFINS.md) |  | [opcional] 
+**cofinsst** | [**NfeSefazCOFINSST**](NfeSefazCOFINSST.md) |  | [opcional] 
+**icmsuf_dest** | [**NfeSefazICMSUFDest**](NfeSefazICMSUFDest.md) |  | [opcional] 
+**_is** | [**NfeSefazIS**](NfeSefazIS.md) |  | [opcional] 
+**ibscbs** | [**NfeSefazTribNFe**](NfeSefazTribNFe.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,20 +2,21 @@
 
 Endereço do emitente.    *Caso não seja informado, será utilizado o do cadastro da empresa.*
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**x_lgr** | **str** | Logradouro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**nro** | **str** | Número.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_cpl** | **str** | Complemento.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_bairro** | **str** | Bairro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**c_mun** | **str** | Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_mun** | **str** | Nome do município, , informar EXTERIOR para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**cep** | **str** | CEP.  Informar zeros não significativos.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**uf** | **str** | Sigla da UF, , informar EX para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**fone** | **str** | Telefone.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**email** | **str** | Endereço de E-mail. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**x_lgr** | **str** | Logradouro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**nro** | **str** | Número.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_cpl** | **str** | Complemento.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_bairro** | **str** | Bairro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**c_mun** | **str** | Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_mun** | **str** | Nome do município, , informar EXTERIOR para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**cep** | **str** | CEP.  Informar zeros não significativos.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**uf** | **str** | Sigla da UF, , informar EX para operações com o exterior.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**fone** | **str** | Telefone.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**email** | **str** | Endereço de E-mail. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

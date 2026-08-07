@@ -1,8 +1,8 @@
 # acbrapi_sdk.ContaApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**consultar_cota_conta**](ContaApi.md#consultar_cota_conta) | **GET** /conta/cotas/{nome} | Consultar o limite de uso e o consumo de uma cota específica.
 [**consultar_cota_pre_pago**](ContaApi.md#consultar_cota_pre_pago) | **GET** /conta/cotas/prepago | Consultar o resumo da cota de créditos pré-pagos.
@@ -15,9 +15,9 @@ Method | HTTP request | Description
 
 Consultar o limite de uso e o consumo de uma cota específica.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -41,9 +41,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.ContaApi(api_client)
     nome = 'nome_example' # str | Nome da cota a ser consultada.
 
@@ -52,43 +52,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_cota_conta(nome)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ContaApi->consultar_cota_conta: %s\n" % e)
+        print("Excecao ao chamar ContaApi->consultar_cota_conta: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **nome** | **str**| Nome da cota a ser consultada. | 
 
-### Return type
+### Tipo do retorno
 
 [**ContaCota**](ContaCota.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_cota_pre_pago**
 > ContaCotaPrePago consultar_cota_pre_pago()
 
 Consultar o resumo da cota de créditos pré-pagos.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -112,9 +112,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.ContaApi(api_client)
     
     try:
@@ -122,40 +122,40 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_cota_pre_pago()
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ContaApi->consultar_cota_pre_pago: %s\n" % e)
+        print("Excecao ao chamar ContaApi->consultar_cota_pre_pago: %s\n" % e)
 ```
 
-### Parameters
-This endpoint does not need any parameter.
+### Parâmetros
+Este endpoint não usa parâmetros.
 
-### Return type
+### Tipo do retorno
 
 [**ContaCotaPrePago**](ContaCotaPrePago.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_cotas_conta**
 > ContaCotaListagem listar_cotas_conta()
 
 Consultar os limites de uso e consumo das cotas disponíveis, exceto a cota de créditos pré-pagos.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -179,9 +179,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.ContaApi(api_client)
     
     try:
@@ -189,40 +189,40 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.listar_cotas_conta()
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ContaApi->listar_cotas_conta: %s\n" % e)
+        print("Excecao ao chamar ContaApi->listar_cotas_conta: %s\n" % e)
 ```
 
-### Parameters
-This endpoint does not need any parameter.
+### Parâmetros
+Este endpoint não usa parâmetros.
 
-### Return type
+### Tipo do retorno
 
 [**ContaCotaListagem**](ContaCotaListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_extrato_creditos_conta**
 > ContaExtratoCreditoListagem listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit)
 
 Consultar o extrato de movimentação de créditos do tenant atual.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -246,51 +246,51 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.ContaApi(api_client)
-    data_inicial = 'data_inicial_example' # str |  (optional)
-data_final = 'data_final_example' # str |  (optional)
-top = 56 # int |  (optional)
-skip = 56 # int |  (optional)
-limit = 56 # int |  (optional)
+    data_inicial = 'data_inicial_example' # str |  (opcional)
+data_final = 'data_final_example' # str |  (opcional)
+top = 56 # int |  (opcional)
+skip = 56 # int |  (opcional)
+limit = 56 # int |  (opcional)
 
     try:
         # Consultar o extrato de movimentação de créditos do tenant atual.
         api_response = api_instance.listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ContaApi->listar_extrato_creditos_conta: %s\n" % e)
+        print("Excecao ao chamar ContaApi->listar_extrato_creditos_conta: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
- **data_inicial** | **str**|  | [optional] 
- **data_final** | **str**|  | [optional] 
- **top** | **int**|  | [optional] 
- **skip** | **int**|  | [optional] 
- **limit** | **int**|  | [optional] 
+ **data_inicial** | **str**|  | [opcional] 
+ **data_final** | **str**|  | [opcional] 
+ **top** | **int**|  | [opcional] 
+ **skip** | **int**|  | [opcional] 
+ **limit** | **int**|  | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**ContaExtratoCreditoListagem**](ContaExtratoCreditoListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

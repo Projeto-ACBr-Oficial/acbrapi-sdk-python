@@ -2,12 +2,13 @@
 
 Grupo de observações de uso livre (para o item da NF-e).
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**obs_cont** | [**NfeSefazObsCont**](NfeSefazObsCont.md) |  | [optional] 
-**obs_fisco** | [**NfeSefazObsFisco**](NfeSefazObsFisco.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**obs_cont** | [**NfeSefazObsCont**](NfeSefazObsCont.md) |  | [opcional] 
+**obs_fisco** | [**NfeSefazObsFisco**](NfeSefazObsFisco.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

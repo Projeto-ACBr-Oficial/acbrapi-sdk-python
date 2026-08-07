@@ -2,12 +2,13 @@
 
 Grupo de Informação do Provedor de Assinatura e Autorização.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **cnpjpaa** | **str** | CNPJ do Provedor de Assinatura e Autorização. | 
 **paa_signature** | [**NfeSefazPAASignature**](NfeSefazPAASignature.md) |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,12 +2,13 @@
 
 Grupo de informações relativas aos descontos condicionados e incondicionados.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**v_desc_incond** | **float** | Valor monetário do desconto incondicionado (R$). | [optional] 
-**v_desc_cond** | **float** | Valor monetário do desconto condicionado (R$). | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**v_desc_incond** | **float** | Valor monetário do desconto incondicionado (R$). | [opcional] 
+**v_desc_cond** | **float** | Valor monetário do desconto condicionado (R$). | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

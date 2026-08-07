@@ -2,15 +2,16 @@
 
 Valores totais da NF com IBS / CBS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **v_bcibscbs** | **float** | Total Base de Calculo. | 
-**g_ibs** | [**NfeSefazGIBS**](NfeSefazGIBS.md) |  | [optional] 
-**g_cbs** | [**NfeSefazIBSCBSMonoTotGCBS**](NfeSefazIBSCBSMonoTotGCBS.md) |  | [optional] 
-**g_mono** | [**NfeSefazGMono**](NfeSefazGMono.md) |  | [optional] 
-**g_estorno_cred** | [**NfeSefazGEstornoCred**](NfeSefazGEstornoCred.md) |  | [optional] 
+**g_ibs** | [**NfeSefazGIBS**](NfeSefazGIBS.md) |  | [opcional] 
+**g_cbs** | [**NfeSefazIBSCBSMonoTotGCBS**](NfeSefazIBSCBSMonoTotGCBS.md) |  | [opcional] 
+**g_mono** | [**NfeSefazGMono**](NfeSefazGMono.md) |  | [opcional] 
+**g_estorno_cred** | [**NfeSefazGEstornoCred**](NfeSefazGEstornoCred.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

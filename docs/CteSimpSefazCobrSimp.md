@@ -2,12 +2,13 @@
 
 Dados da cobrança do CT-e.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fat** | [**CteSimpSefazFatSimp**](CteSimpSefazFatSimp.md) |  | [optional] 
-**dup** | [**list[CteSimpSefazDupSimp]**](CteSimpSefazDupSimp.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**fat** | [**CteSimpSefazFatSimp**](CteSimpSefazFatSimp.md) |  | [opcional] 
+**dup** | [**list[CteSimpSefazDupSimp]**](CteSimpSefazDupSimp.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

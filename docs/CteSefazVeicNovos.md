@@ -2,8 +2,9 @@
 
 informações dos veículos transportados.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **chassi** | **str** | Chassi do veículo. | 
 **c_cor** | **str** | Cor do veículo.  Código de cada montadora. | 
@@ -12,6 +13,6 @@ Name | Type | Description | Notes
 **v_unit** | **float** | Valor Unitário do Veículo. | 
 **v_frete** | **float** | Frete Unitário. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

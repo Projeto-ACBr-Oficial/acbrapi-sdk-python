@@ -2,19 +2,20 @@
 
 Indicador do \"papel\" do tomador do serviço no CT-e.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **toma** | **int** | Tomador do Serviço.  Preencher com:  * 4 - Outros  Obs: Informar os dados cadastrais do tomador do serviço. | 
-**cnpj** | **str** | Número do CNPJ.  Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.  Informar os zeros não significativos. | [optional] 
-**cpf** | **str** | Número do CPF.  Informar os zeros não significativos. | [optional] 
-**ie** | **str** | Inscrição Estadual.  Informar a IE do tomador ou ISENTO se tomador é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o tomador não seja contribuinte do ICMS não informar o conteúdo. | [optional] 
+**cnpj** | **str** | Número do CNPJ.  Em caso de empresa não estabelecida no Brasil, será informado o CNPJ com zeros.  Informar os zeros não significativos. | [opcional] 
+**cpf** | **str** | Número do CPF.  Informar os zeros não significativos. | [opcional] 
+**ie** | **str** | Inscrição Estadual.  Informar a IE do tomador ou ISENTO se tomador é contribuinte do ICMS isento de inscrição no cadastro de contribuintes do ICMS. Caso o tomador não seja contribuinte do ICMS não informar o conteúdo. | [opcional] 
 **x_nome** | **str** | Razão Social ou Nome. | 
-**x_fant** | **str** | Nome Fantasia. | [optional] 
-**fone** | **str** | Telefone. | [optional] 
+**x_fant** | **str** | Nome Fantasia. | [opcional] 
+**fone** | **str** | Telefone. | [opcional] 
 **ender_toma** | [**CteSefazEndereco**](CteSefazEndereco.md) |  | 
-**email** | **str** | Endereço de email. | [optional] 
+**email** | **str** | Endereço de email. | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

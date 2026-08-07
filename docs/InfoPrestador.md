@@ -2,13 +2,14 @@
 
 Grupo de informações do DPS relativas ao Prestador de Serviços.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cnpj** | **str** | Número do CNPJ.  Obrigatório caso o emitente seja pessoa jurídica. | [optional] 
-**cpf** | **str** | Número do CPF.  Obrigatório caso o emitente seja pessoa física. | [optional] 
-**reg_trib** | [**RegTrib**](RegTrib.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cnpj** | **str** | Número do CNPJ.  Obrigatório caso o emitente seja pessoa jurídica. | [opcional] 
+**cpf** | **str** | Número do CPF.  Obrigatório caso o emitente seja pessoa física. | [opcional] 
+**reg_trib** | [**RegTrib**](RegTrib.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

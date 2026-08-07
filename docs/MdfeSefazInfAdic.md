@@ -2,12 +2,13 @@
 
 Informações Adicionais.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [optional] 
-**inf_cpl** | **str** | Informações complementares de interesse do Contribuinte. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [opcional] 
+**inf_cpl** | **str** | Informações complementares de interesse do Contribuinte. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

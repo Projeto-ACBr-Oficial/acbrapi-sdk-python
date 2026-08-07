@@ -2,16 +2,17 @@
 
 Dados dos totais da NF-e.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **icms_tot** | [**NfeSefazICMSTot**](NfeSefazICMSTot.md) |  | 
-**issq_ntot** | [**NfeSefazISSQNtot**](NfeSefazISSQNtot.md) |  | [optional] 
-**ret_trib** | [**NfeSefazRetTrib**](NfeSefazRetTrib.md) |  | [optional] 
-**is_tot** | [**NfeSefazISTot**](NfeSefazISTot.md) |  | [optional] 
-**ibscbs_tot** | [**NfeSefazIBSCBSMonoTot**](NfeSefazIBSCBSMonoTot.md) |  | [optional] 
-**v_nf_tot** | **float** | Valor Total da NF considerando os impostos por fora IBS, CBS e IS. | [optional] 
+**issq_ntot** | [**NfeSefazISSQNtot**](NfeSefazISSQNtot.md) |  | [opcional] 
+**ret_trib** | [**NfeSefazRetTrib**](NfeSefazRetTrib.md) |  | [opcional] 
+**is_tot** | [**NfeSefazISTot**](NfeSefazISTot.md) |  | [opcional] 
+**ibscbs_tot** | [**NfeSefazIBSCBSMonoTot**](NfeSefazIBSCBSMonoTot.md) |  | [opcional] 
+**v_nf_tot** | **float** | Valor Total da NF considerando os impostos por fora IBS, CBS e IS. | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

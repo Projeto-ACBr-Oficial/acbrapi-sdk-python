@@ -1,12 +1,13 @@
 # NfseCidadesAtendidas
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **int** | Quantidade de cidades atendidas pela API. | [optional] 
-**data** | **list[str]** | Lista com os códigos IBGE das cidades atendidas pela API. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**count** | **int** | Quantidade de cidades atendidas pela API. | [opcional] 
+**data** | **list[str]** | Lista com os códigos IBGE das cidades atendidas pela API. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

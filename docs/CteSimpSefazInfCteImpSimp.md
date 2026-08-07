@@ -2,15 +2,16 @@
 
 Informações relativas aos Impostos.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **icms** | [**CteSimpSefazImpSimp**](CteSimpSefazImpSimp.md) |  | 
-**v_tot_trib** | **float** | Valor Total dos Tributos. | [optional] 
-**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [optional] 
-**icmsuf_fim** | [**CteSimpSefazICMSUFFimSimp**](CteSimpSefazICMSUFFimSimp.md) |  | [optional] 
-**ibscbs** | [**CteSimpSefazTribCTeSimp**](CteSimpSefazTribCTeSimp.md) |  | [optional] 
+**v_tot_trib** | **float** | Valor Total dos Tributos. | [opcional] 
+**inf_ad_fisco** | **str** | Informações adicionais de interesse do Fisco.  Norma referenciada, informações complementares, etc. | [opcional] 
+**icmsuf_fim** | [**CteSimpSefazICMSUFFimSimp**](CteSimpSefazICMSUFFimSimp.md) |  | [opcional] 
+**ibscbs** | [**CteSimpSefazTribCTeSimp**](CteSimpSefazTribCTeSimp.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

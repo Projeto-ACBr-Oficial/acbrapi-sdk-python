@@ -2,14 +2,15 @@
 
 Dados do Veículo.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **placa** | **str** | Placa do veículo. | 
-**renavam** | **str** | RENAVAM do veículo. | [optional] 
-**prop** | [**CteOsSefazPropOS**](CteOsSefazPropOS.md) |  | [optional] 
-**uf** | **str** | UF em que veículo está licenciado.  Sigla da UF de licenciamento do veículo. | [optional] 
+**renavam** | **str** | RENAVAM do veículo. | [opcional] 
+**prop** | [**CteOsSefazPropOS**](CteOsSefazPropOS.md) |  | [opcional] 
+**uf** | **str** | UF em que veículo está licenciado.  Sigla da UF de licenciamento do veículo. | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

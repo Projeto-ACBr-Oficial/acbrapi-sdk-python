@@ -1,16 +1,17 @@
 # RpsDadosTomador
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cpf_cnpj** | **str** | CPF ou CNPJ do tomador/destinatário. | [optional] 
-**inscricao_municipal** | **str** | Inscrição Municipal do tomador/destinatário. | [optional] 
-**nome_razao_social** | **str** | Nome ou Razão Social do tomador/destinatário. | 
-**fone** | **str** | Telefone do tomador/destinatário. | [optional] 
-**email** | **str** | Email do tomador/destinatário. | [optional] 
-**endereco** | [**RpsDadosTomadorEndereco**](RpsDadosTomadorEndereco.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cpf_cnpj** | **str** | CPF ou CNPJ do tomador/destinatário. | [opcional] 
+**inscricao_municipal** | **str** | Inscrição Municipal do tomador/destinatário. | [opcional] 
+**nome_razao_social** | **str** | Nome ou Razão Social do tomador/destinatário. | 
+**fone** | **str** | Telefone do tomador/destinatário. | [opcional] 
+**email** | **str** | Email do tomador/destinatário. | [opcional] 
+**endereco** | [**RpsDadosTomadorEndereco**](RpsDadosTomadorEndereco.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

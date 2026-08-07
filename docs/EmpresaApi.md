@@ -1,8 +1,8 @@
 # acbrapi_sdk.EmpresaApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**alterar_config_cte**](EmpresaApi.md#alterar_config_cte) | **PUT** /empresas/{cpf_cnpj}/cte | Alterar configuração de CT-e
 [**alterar_config_cte_os**](EmpresaApi.md#alterar_config_cte_os) | **PUT** /empresas/{cpf_cnpj}/cteos | Alterar configuração de CT-e OS
@@ -42,9 +42,9 @@ Method | HTTP request | Description
 
 Alterar configuração de CT-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -68,9 +68,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigCte() # EmpresaConfigCte | 
@@ -80,44 +80,44 @@ body = acbrapi_sdk.EmpresaConfigCte() # EmpresaConfigCte |
         api_response = api_instance.alterar_config_cte(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_cte: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_cte: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigCte**](EmpresaConfigCte.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigCte**](EmpresaConfigCte.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_cte_os**
 > EmpresaConfigCteOs alterar_config_cte_os(cpf_cnpj, body)
 
 Alterar configuração de CT-e OS
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -141,9 +141,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigCteOs() # EmpresaConfigCteOs | 
@@ -153,44 +153,44 @@ body = acbrapi_sdk.EmpresaConfigCteOs() # EmpresaConfigCteOs |
         api_response = api_instance.alterar_config_cte_os(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_cte_os: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_cte_os: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigCteOs**](EmpresaConfigCteOs.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigCteOs**](EmpresaConfigCteOs.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_dce**
 > EmpresaConfigDce alterar_config_dce(cpf_cnpj, body)
 
 Alterar configuração de DC-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -214,9 +214,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigDce() # EmpresaConfigDce | 
@@ -226,44 +226,44 @@ body = acbrapi_sdk.EmpresaConfigDce() # EmpresaConfigDce |
         api_response = api_instance.alterar_config_dce(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_dce: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_dce: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigDce**](EmpresaConfigDce.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigDce**](EmpresaConfigDce.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_distribuicao_nfe**
 > EmpresaConfigDistribuicaoNfe alterar_config_distribuicao_nfe(cpf_cnpj, body)
 
 Alterar configuração de Distribuição de NF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -287,9 +287,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigDistribuicaoNfe() # EmpresaConfigDistribuicaoNfe | 
@@ -299,44 +299,44 @@ body = acbrapi_sdk.EmpresaConfigDistribuicaoNfe() # EmpresaConfigDistribuicaoNfe
         api_response = api_instance.alterar_config_distribuicao_nfe(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_distribuicao_nfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_distribuicao_nfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigDistribuicaoNfe**](EmpresaConfigDistribuicaoNfe.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigDistribuicaoNfe**](EmpresaConfigDistribuicaoNfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_mdfe**
 > EmpresaConfigMdfe alterar_config_mdfe(cpf_cnpj, body)
 
 Alterar configuração de MDF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -360,9 +360,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigMdfe() # EmpresaConfigMdfe | 
@@ -372,44 +372,44 @@ body = acbrapi_sdk.EmpresaConfigMdfe() # EmpresaConfigMdfe |
         api_response = api_instance.alterar_config_mdfe(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_mdfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigMdfe**](EmpresaConfigMdfe.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigMdfe**](EmpresaConfigMdfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_nfce**
 > EmpresaConfigNfce alterar_config_nfce(cpf_cnpj, body)
 
 Alterar configuração de NFC-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -433,9 +433,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigNfce() # EmpresaConfigNfce | 
@@ -445,44 +445,44 @@ body = acbrapi_sdk.EmpresaConfigNfce() # EmpresaConfigNfce |
         api_response = api_instance.alterar_config_nfce(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_nfce: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_nfce: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigNfce**](EmpresaConfigNfce.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfce**](EmpresaConfigNfce.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_nfcom**
 > EmpresaConfigNfcom alterar_config_nfcom(cpf_cnpj, body)
 
 Alterar configuração de NFCom
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -506,9 +506,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigNfcom() # EmpresaConfigNfcom | 
@@ -518,44 +518,44 @@ body = acbrapi_sdk.EmpresaConfigNfcom() # EmpresaConfigNfcom |
         api_response = api_instance.alterar_config_nfcom(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_nfcom: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigNfcom**](EmpresaConfigNfcom.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfcom**](EmpresaConfigNfcom.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_nfe**
 > EmpresaConfigNfe alterar_config_nfe(cpf_cnpj, body)
 
 Alterar configuração de NF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -579,9 +579,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigNfe() # EmpresaConfigNfe | 
@@ -591,44 +591,44 @@ body = acbrapi_sdk.EmpresaConfigNfe() # EmpresaConfigNfe |
         api_response = api_instance.alterar_config_nfe(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_nfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_nfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigNfe**](EmpresaConfigNfe.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfe**](EmpresaConfigNfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **alterar_config_nfse**
 > EmpresaConfigNfse alterar_config_nfse(cpf_cnpj, body)
 
 Alterar configuração de NFS-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -652,9 +652,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaConfigNfse() # EmpresaConfigNfse | 
@@ -664,35 +664,35 @@ body = acbrapi_sdk.EmpresaConfigNfse() # EmpresaConfigNfse |
         api_response = api_instance.alterar_config_nfse(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->alterar_config_nfse: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->alterar_config_nfse: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaConfigNfse**](EmpresaConfigNfse.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfse**](EmpresaConfigNfse.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **atualizar_empresa**
 > Empresa atualizar_empresa(cpf_cnpj, body)
@@ -701,9 +701,9 @@ Alterar empresa
 
 Altera o cadastro de uma empresa (emitente/prestador) que esteja associada a sua conta.  Nesse método, por tratar-se de um PUT, caso algum campo não seja informado, o valor dele será apagado.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -727,9 +727,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.Empresa() # Empresa | 
@@ -739,44 +739,44 @@ body = acbrapi_sdk.Empresa() # Empresa |
         api_response = api_instance.atualizar_empresa(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->atualizar_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->atualizar_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**Empresa**](Empresa.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**Empresa**](Empresa.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_logotipo_empresa**
 > file baixar_logotipo_empresa(cpf_cnpj)
 
 Baixar logotipo
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -800,9 +800,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -811,34 +811,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_logotipo_empresa(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->baixar_logotipo_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->baixar_logotipo_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **cadastrar_certificado_empresa**
 > EmpresaCertificado cadastrar_certificado_empresa(cpf_cnpj, body)
@@ -847,9 +847,9 @@ Cadastrar certificado
 
 Cadastre ou atualize um certificado digital e vincule a sua empresa, para que possa iniciar a emissão de notas.  * No parâmetro `certificado`, envie o binário do certificado digital (.pfx ou .p12) codificado em **base64**.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -873,9 +873,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 body = acbrapi_sdk.EmpresaPedidoCadastroCertificado() # EmpresaPedidoCadastroCertificado | 
@@ -885,44 +885,44 @@ body = acbrapi_sdk.EmpresaPedidoCadastroCertificado() # EmpresaPedidoCadastroCer
         api_response = api_instance.cadastrar_certificado_empresa(cpf_cnpj, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->cadastrar_certificado_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->cadastrar_certificado_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
  **body** | [**EmpresaPedidoCadastroCertificado**](EmpresaPedidoCadastroCertificado.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaCertificado**](EmpresaCertificado.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_certificado_empresa**
 > EmpresaCertificado consultar_certificado_empresa(cpf_cnpj)
 
 Consultar certificado
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -946,9 +946,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -957,43 +957,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_certificado_empresa(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_certificado_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_certificado_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaCertificado**](EmpresaCertificado.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_cte**
 > EmpresaConfigCte consultar_config_cte(cpf_cnpj)
 
 Consultar configuração de CT-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1017,9 +1017,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1028,43 +1028,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_cte(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_cte: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_cte: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigCte**](EmpresaConfigCte.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_cte_os**
 > EmpresaConfigCteOs consultar_config_cte_os(cpf_cnpj)
 
 Consultar configuração de CT-e OS
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1088,9 +1088,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1099,43 +1099,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_cte_os(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_cte_os: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_cte_os: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigCteOs**](EmpresaConfigCteOs.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_dce**
 > EmpresaConfigDce consultar_config_dce(cpf_cnpj)
 
 Consultar configuração de DC-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1159,9 +1159,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1170,43 +1170,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_dce(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_dce: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_dce: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigDce**](EmpresaConfigDce.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_distribuicao_nfe**
 > EmpresaConfigDistribuicaoNfe consultar_config_distribuicao_nfe(cpf_cnpj)
 
 Consultar configuração de Distribuição de NF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1230,9 +1230,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1241,43 +1241,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_distribuicao_nfe(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_distribuicao_nfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_distribuicao_nfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigDistribuicaoNfe**](EmpresaConfigDistribuicaoNfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_mdfe**
 > EmpresaConfigMdfe consultar_config_mdfe(cpf_cnpj)
 
 Consultar configuração de MDF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1301,9 +1301,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1312,43 +1312,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_mdfe(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_mdfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigMdfe**](EmpresaConfigMdfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_nfce**
 > EmpresaConfigNfce consultar_config_nfce(cpf_cnpj)
 
 Consultar configuração de NFC-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1372,9 +1372,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1383,43 +1383,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_nfce(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_nfce: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_nfce: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfce**](EmpresaConfigNfce.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_nfcom**
 > EmpresaConfigNfcom consultar_config_nfcom(cpf_cnpj)
 
 Consultar configuração de NFCom
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1443,9 +1443,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1454,43 +1454,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_nfcom(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_nfcom: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_nfcom: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfcom**](EmpresaConfigNfcom.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_nfe**
 > EmpresaConfigNfe consultar_config_nfe(cpf_cnpj)
 
 Consultar configuração de NF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1514,9 +1514,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1525,43 +1525,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_nfe(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_nfe: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_nfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfe**](EmpresaConfigNfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_config_nfse**
 > EmpresaConfigNfse consultar_config_nfse(cpf_cnpj)
 
 Consultar configuração de NFS-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1585,9 +1585,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1596,43 +1596,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_config_nfse(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_config_nfse: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_config_nfse: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaConfigNfse**](EmpresaConfigNfse.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_empresa**
 > Empresa consultar_empresa(cpf_cnpj)
 
 Consultar empresa
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1656,9 +1656,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1667,34 +1667,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_empresa(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->consultar_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->consultar_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**Empresa**](Empresa.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **criar_empresa**
 > Empresa criar_empresa(body)
@@ -1703,9 +1703,9 @@ Cadastrar empresa
 
 Cadastre uma nova empresa (emitente ou prestador) à sua conta.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1729,9 +1729,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     body = acbrapi_sdk.Empresa() # Empresa | 
 
@@ -1740,34 +1740,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.criar_empresa(body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->criar_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->criar_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **body** | [**Empresa**](Empresa.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**Empresa**](Empresa.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **enviar_certificado_empresa**
 > EmpresaCertificado enviar_certificado_empresa(cpf_cnpj, input=input)
@@ -1776,9 +1776,9 @@ Upload de certificado
 
 Cadastre ou atualize um certificado digital e vincule a sua empresa, para que possa iniciar a emissão de notas.  * Utilize o `content-type` igual a `multipart/form-data`.  * No parâmetro `file`, envie o binário do arquivo (.pfx ou .p12) do certificado digital.  * No parâmetro `password`, envie a senha do certificado.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1802,47 +1802,47 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
-input = '/path/to/file' # file |  (optional)
+input = '/path/to/file' # file |  (opcional)
 
     try:
         # Upload de certificado
         api_response = api_instance.enviar_certificado_empresa(cpf_cnpj, input=input)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->enviar_certificado_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->enviar_certificado_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
- **input** | **file**|  | [optional] 
+ **input** | **file**|  | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaCertificado**](EmpresaCertificado.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **enviar_logotipo_empresa**
 > enviar_logotipo_empresa(cpf_cnpj, input=input)
@@ -1851,9 +1851,9 @@ Enviar logotipo
 
 Cadastre ou atualize um logotipo e vincule a sua empresa.    **Restrições:**  * Tipos de mídia (MIME) suportados: `image/png` e `image/jpeg`  * Tamanho máximo do arquivo: 200 KB    **Cenários de uso:**  * Quero que minhas notas sejam impressas com esse logotipo.  * Quero trocar o logotipo utilizado em minhas impressões.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1877,55 +1877,55 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
-input = '/path/to/file' # file |  (optional)
+input = '/path/to/file' # file |  (opcional)
 
     try:
         # Enviar logotipo
         api_instance.enviar_logotipo_empresa(cpf_cnpj, input=input)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->enviar_logotipo_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->enviar_logotipo_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
- **input** | **file**|  | [optional] 
+ **input** | **file**|  | [opcional] 
 
-### Return type
+### Tipo do retorno
 
-void (empty response body)
+void (corpo de resposta vazio)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: multipart/form-data
- - **Accept**: Not defined
+ - **Accept**: Não definido
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **204** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **excluir_certificado_empresa**
 > excluir_certificado_empresa(cpf_cnpj)
 
 Deletar certificado
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1949,9 +1949,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -1959,43 +1959,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         # Deletar certificado
         api_instance.excluir_certificado_empresa(cpf_cnpj)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->excluir_certificado_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->excluir_certificado_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
-void (empty response body)
+void (corpo de resposta vazio)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: Não definido
+ - **Accept**: Não definido
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **204** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **excluir_empresa**
 > excluir_empresa(cpf_cnpj)
 
 Deletar empresa
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -2019,9 +2019,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -2029,43 +2029,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         # Deletar empresa
         api_instance.excluir_empresa(cpf_cnpj)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->excluir_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->excluir_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
-void (empty response body)
+void (corpo de resposta vazio)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: Não definido
+ - **Accept**: Não definido
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **204** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **excluir_logotipo_empresa**
 > excluir_logotipo_empresa(cpf_cnpj)
 
 Deletar logotipo
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -2089,9 +2089,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF ou CNPJ da empresa.  Utilize o valor sem máscara.
 
@@ -2099,34 +2099,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         # Deletar logotipo
         api_instance.excluir_logotipo_empresa(cpf_cnpj)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->excluir_logotipo_empresa: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->excluir_logotipo_empresa: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF ou CNPJ da empresa.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
-void (empty response body)
+void (corpo de resposta vazio)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+ - **Content-Type**: Não definido
+ - **Accept**: Não definido
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **204** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_certificados**
 > EmpresaCertificadoListagem listar_certificados(top=top, skip=skip, inlinecount=inlinecount, expires_in=expires_in, include_expired=include_expired)
@@ -2135,9 +2135,9 @@ Listar certificados
 
 Retorna a lista dos certificados associadas à sua conta. Os certificados são retornados ordenados pela data da criação, com as mais recentes aparecendo primeiro.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -2161,53 +2161,53 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
-    top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (optional) (default to 10)
-skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (optional) (default to 0)
-inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (optional) (default to False)
-expires_in = 56 # int | Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in=30 -&gt; certificados que vencem nos próximos 30 dias.   - expires_in=7  -&gt; certificados que vencem nos próximos 7 dias. (optional)
-include_expired = True # bool | Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - `true`: incluir certificados vencidos.   - `false`: exibir apenas certificados válidos. (optional) (default to True)
+    top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (opcional) (default 10)
+skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (opcional) (default 0)
+inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (opcional) (default False)
+expires_in = 56 # int | Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in=30 -&gt; certificados que vencem nos próximos 30 dias.   - expires_in=7  -&gt; certificados que vencem nos próximos 7 dias. (opcional)
+include_expired = True # bool | Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - `true`: incluir certificados vencidos.   - `false`: exibir apenas certificados válidos. (opcional) (default True)
 
     try:
         # Listar certificados
         api_response = api_instance.listar_certificados(top=top, skip=skip, inlinecount=inlinecount, expires_in=expires_in, include_expired=include_expired)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->listar_certificados: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->listar_certificados: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
- **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional] [default to 10]
- **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional] [default to 0]
- **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional] [default to False]
- **expires_in** | **int**| Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in&#x3D;30 -&amp;gt; certificados que vencem nos próximos 30 dias.   - expires_in&#x3D;7  -&amp;gt; certificados que vencem nos próximos 7 dias. | [optional] 
- **include_expired** | **bool**| Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - &#x60;true&#x60;: incluir certificados vencidos.   - &#x60;false&#x60;: exibir apenas certificados válidos. | [optional] [default to True]
+ **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [opcional] [default 10]
+ **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [opcional] [default 0]
+ **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [opcional] [default False]
+ **expires_in** | **int**| Filtrar certificados que expiram dentro de X dias.    Informe um número inteiro correspondente à quantidade de dias até o vencimento.  Exemplos:   - expires_in&#x3D;30 -&amp;gt; certificados que vencem nos próximos 30 dias.   - expires_in&#x3D;7  -&amp;gt; certificados que vencem nos próximos 7 dias. | [opcional] 
+ **include_expired** | **bool**| Indicar se os certificados já vencidos devem ser incluídos no resultado.    Valores aceitos:   - &#x60;true&#x60;: incluir certificados vencidos.   - &#x60;false&#x60;: exibir apenas certificados válidos. | [opcional] [default True]
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaCertificadoListagem**](EmpresaCertificadoListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_empresas**
 > EmpresaListagem listar_empresas(top=top, skip=skip, inlinecount=inlinecount, cpf_cnpj=cpf_cnpj, nome_razao_social=nome_razao_social)
@@ -2216,9 +2216,9 @@ Listar empresas
 
 Retorna a lista das empresas associadas à sua conta. As empresas são retornadas ordenadas pela data da criação, com as mais recentes aparecendo primeiro.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -2242,51 +2242,51 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.EmpresaApi(api_client)
-    top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (optional) (default to 10)
-skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (optional) (default to 0)
-inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (optional) (default to False)
-cpf_cnpj = 'cpf_cnpj_example' # str | Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*. (optional)
-nome_razao_social = 'nome_razao_social_example' # str | Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*. (optional)
+    top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (opcional) (default 10)
+skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (opcional) (default 0)
+inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (opcional) (default False)
+cpf_cnpj = 'cpf_cnpj_example' # str | Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*. (opcional)
+nome_razao_social = 'nome_razao_social_example' # str | Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*. (opcional)
 
     try:
         # Listar empresas
         api_response = api_instance.listar_empresas(top=top, skip=skip, inlinecount=inlinecount, cpf_cnpj=cpf_cnpj, nome_razao_social=nome_razao_social)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling EmpresaApi->listar_empresas: %s\n" % e)
+        print("Excecao ao chamar EmpresaApi->listar_empresas: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
- **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional] [default to 10]
- **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional] [default to 0]
- **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional] [default to False]
- **cpf_cnpj** | **str**| Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*. | [optional] 
- **nome_razao_social** | **str**| Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*. | [optional] 
+ **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [opcional] [default 10]
+ **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [opcional] [default 0]
+ **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [opcional] [default False]
+ **cpf_cnpj** | **str**| Filtrar pelo CPF ou CNPJ da empresa.    *Utilize o valor sem máscara*. | [opcional] 
+ **nome_razao_social** | **str**| Filtrar pelo nome ou razão social da empresa.    Esse filtro realiza uma correspondência pelo início do texto,  retornando apenas empresas cujo nome ou razão social começam com  o valor informado.    *Caso o filtro pelo CPF ou CNPJ também seja informado na requisição,  este filtro é ignorado*. | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**EmpresaListagem**](EmpresaListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

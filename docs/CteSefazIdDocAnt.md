@@ -2,12 +2,13 @@
 
 Informações de identificação dos documentos de Transporte Anterior.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id_doc_ant_pap** | [**list[CteSefazIdDocAntPap]**](CteSefazIdDocAntPap.md) |  | [optional] 
-**id_doc_ant_ele** | [**list[CteSefazIdDocAntEle]**](CteSefazIdDocAntEle.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**id_doc_ant_pap** | [**list[CteSefazIdDocAntPap]**](CteSefazIdDocAntPap.md) |  | [opcional] 
+**id_doc_ant_ele** | [**list[CteSefazIdDocAntEle]**](CteSefazIdDocAntEle.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

@@ -2,17 +2,18 @@
 
 Dados do transportador.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cnpj** | **str** | CNPJ do transportador. | [optional] 
-**cpf** | **str** | CPF do transportador. | [optional] 
-**x_nome** | **str** | Razão Social ou nome do transportador. | [optional] 
-**ie** | **str** | Inscrição Estadual (v2.0). | [optional] 
-**x_ender** | **str** | Endereço completo. | [optional] 
-**x_mun** | **str** | Nome do munícipio. | [optional] 
-**uf** | **str** | Sigla da UF. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cnpj** | **str** | CNPJ do transportador. | [opcional] 
+**cpf** | **str** | CPF do transportador. | [opcional] 
+**x_nome** | **str** | Razão Social ou nome do transportador. | [opcional] 
+**ie** | **str** | Inscrição Estadual (v2.0). | [opcional] 
+**x_ender** | **str** | Endereço completo. | [opcional] 
+**x_mun** | **str** | Nome do munícipio. | [opcional] 
+**uf** | **str** | Sigla da UF. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

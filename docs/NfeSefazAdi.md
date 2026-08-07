@@ -2,15 +2,16 @@
 
 Adições (NT 2011/004).
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**n_adicao** | **int** | Número da Adição. | [optional] 
+**n_adicao** | **int** | Número da Adição. | [opcional] 
 **n_seq_adic** | **int** | Número seqüencial do item. | 
 **c_fabricante** | **str** | Código do fabricante estrangeiro (usado nos sistemas internos de informação do emitente da NF-e). | 
-**v_desc_di** | **float** | Valor do desconto do item. | [optional] 
-**n_draw** | **str** | Número do ato concessório de Drawback. | [optional] 
+**v_desc_di** | **float** | Valor do desconto do item. | [opcional] 
+**n_draw** | **str** | Número do ato concessório de Drawback. | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

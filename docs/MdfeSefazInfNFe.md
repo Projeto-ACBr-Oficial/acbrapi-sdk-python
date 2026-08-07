@@ -2,15 +2,16 @@
 
 Nota Fiscal Eletronica.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **ch_nfe** | **str** | Nota Fiscal Eletrônica. | 
-**seg_cod_barra** | **str** | Segundo código de barras. | [optional] 
-**ind_reentrega** | **int** | Indicador de Reentrega. | [optional] 
-**inf_unid_transp** | [**list[MdfeSefazUnidadeTransp]**](MdfeSefazUnidadeTransp.md) |  | [optional] 
-**peri** | [**list[MdfeSefazInfNFePeri]**](MdfeSefazInfNFePeri.md) |  | [optional] 
+**seg_cod_barra** | **str** | Segundo código de barras. | [opcional] 
+**ind_reentrega** | **int** | Indicador de Reentrega. | [opcional] 
+**inf_unid_transp** | [**list[MdfeSefazUnidadeTransp]**](MdfeSefazUnidadeTransp.md) |  | [opcional] 
+**peri** | [**list[MdfeSefazInfNFePeri]**](MdfeSefazInfNFePeri.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

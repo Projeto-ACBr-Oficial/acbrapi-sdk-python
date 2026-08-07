@@ -2,17 +2,18 @@
 
 Informações do modal.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **versao_modal** | **str** | Versão do leiaute específico para o Modal. | 
-**rodo** | [**CteSefazRodo**](CteSefazRodo.md) |  | [optional] 
-**aereo** | [**CteSefazAereo**](CteSefazAereo.md) |  | [optional] 
-**ferrov** | [**CteSefazFerrov**](CteSefazFerrov.md) |  | [optional] 
-**aquav** | [**CteSefazAquav**](CteSefazAquav.md) |  | [optional] 
-**duto** | [**CteSefazDuto**](CteSefazDuto.md) |  | [optional] 
-**multimodal** | [**CteSefazMultimodal**](CteSefazMultimodal.md) |  | [optional] 
+**rodo** | [**CteSefazRodo**](CteSefazRodo.md) |  | [opcional] 
+**aereo** | [**CteSefazAereo**](CteSefazAereo.md) |  | [opcional] 
+**ferrov** | [**CteSefazFerrov**](CteSefazFerrov.md) |  | [opcional] 
+**aquav** | [**CteSefazAquav**](CteSefazAquav.md) |  | [opcional] 
+**duto** | [**CteSefazDuto**](CteSefazDuto.md) |  | [opcional] 
+**multimodal** | [**CteSefazMultimodal**](CteSefazMultimodal.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

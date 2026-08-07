@@ -2,14 +2,15 @@
 
 Manifesto Eletrônico de Documentos Fiscais. Somente para modal Aquaviário (vide regras MOC).
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **ch_mdfe** | **str** | Manifesto Eletrônico de Documentos Fiscais. | 
-**ind_reentrega** | **int** | Indicador de Reentrega. | [optional] 
-**inf_unid_transp** | [**list[MdfeSefazUnidadeTransp]**](MdfeSefazUnidadeTransp.md) |  | [optional] 
-**peri** | [**list[MdfeSefazInfMDFeTranspPeri]**](MdfeSefazInfMDFeTranspPeri.md) |  | [optional] 
+**ind_reentrega** | **int** | Indicador de Reentrega. | [opcional] 
+**inf_unid_transp** | [**list[MdfeSefazUnidadeTransp]**](MdfeSefazUnidadeTransp.md) |  | [opcional] 
+**peri** | [**list[MdfeSefazInfMDFeTranspPeri]**](MdfeSefazInfMDFeTranspPeri.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

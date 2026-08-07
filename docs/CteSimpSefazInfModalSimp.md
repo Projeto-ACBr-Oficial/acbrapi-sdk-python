@@ -2,17 +2,18 @@
 
 Informações do modal.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **versao_modal** | **str** | Versão do leiaute específico para o Modal. | 
-**rodo** | [**CteSimpSefazRodoSimp**](CteSimpSefazRodoSimp.md) |  | [optional] 
-**aereo** | [**CteSimpSefazAereoSimp**](CteSimpSefazAereoSimp.md) |  | [optional] 
-**ferrov** | [**CteSimpSefazFerrovSimp**](CteSimpSefazFerrovSimp.md) |  | [optional] 
-**aquav** | [**CteSimpSefazAquavSimp**](CteSimpSefazAquavSimp.md) |  | [optional] 
-**duto** | [**CteSimpSefazDutoSimp**](CteSimpSefazDutoSimp.md) |  | [optional] 
-**multimodal** | [**CteSimpSefazMultimodalSimp**](CteSimpSefazMultimodalSimp.md) |  | [optional] 
+**rodo** | [**CteSimpSefazRodoSimp**](CteSimpSefazRodoSimp.md) |  | [opcional] 
+**aereo** | [**CteSimpSefazAereoSimp**](CteSimpSefazAereoSimp.md) |  | [opcional] 
+**ferrov** | [**CteSimpSefazFerrovSimp**](CteSimpSefazFerrovSimp.md) |  | [opcional] 
+**aquav** | [**CteSimpSefazAquavSimp**](CteSimpSefazAquavSimp.md) |  | [opcional] 
+**duto** | [**CteSimpSefazDutoSimp**](CteSimpSefazDutoSimp.md) |  | [opcional] 
+**multimodal** | [**CteSimpSefazMultimodalSimp**](CteSimpSefazMultimodalSimp.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

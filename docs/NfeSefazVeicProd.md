@@ -2,8 +2,9 @@
 
 Veículos novos.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **tp_op** | **int** | Tipo da Operação (1 - Venda concessionária; 2 - Faturamento direto; 3 - Venda direta; 0 - Outros). | 
 **chassi** | **str** | Chassi do veículo - VIN (código-identificação-veículo). | 
@@ -30,6 +31,6 @@ Name | Type | Description | Notes
 **lota** | **int** | Quantidade máxima de permitida de passageiros sentados, inclusive motorista. | 
 **tp_rest** | **int** | Restrição  * 0 - Não há  * 1 - Alienação Fiduciária  * 2 - Arrendamento Mercantil  * 3 - Reserva de Domínio  * 4 - Penhor de Veículos  * 9 - outras | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

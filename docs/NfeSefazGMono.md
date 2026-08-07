@@ -2,8 +2,9 @@
 
 Totais da Monofasia.  Só deverá ser utilizado para DFe modelos 55 e 65.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **v_ibs_mono** | **float** | Valor total do IBS monofásico. | 
 **v_cbs_mono** | **float** | Valor total da CBS monofásica. | 
@@ -12,6 +13,6 @@ Name | Type | Description | Notes
 **v_ibs_mono_ret** | **float** | Valor do IBS monofásico retido anteriormente. | 
 **v_cbs_mono_ret** | **float** | Valor da CBS monofásica retida anteriormente. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

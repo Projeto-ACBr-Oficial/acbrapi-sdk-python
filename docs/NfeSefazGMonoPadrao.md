@@ -2,8 +2,9 @@
 
 Grupo de informações da Tributação Monofásica padrão.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **q_bc_mono** | **float** | Quantidade tributada na monofasia. | 
 **ad_rem_ibs** | **float** | Alíquota ad rem do IBS. | 
@@ -11,6 +12,6 @@ Name | Type | Description | Notes
 **v_ibs_mono** | **float** | Valor do IBS monofásico. | 
 **v_cbs_mono** | **float** | Valor da CBS monofásica. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

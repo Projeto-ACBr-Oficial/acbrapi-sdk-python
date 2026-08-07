@@ -1,16 +1,17 @@
 # NfeSefazIpi
 
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cnpj_prod** | **str** | CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os casos de exportação direta ou indireta. | [optional] 
-**c_selo** | **str** | Código do selo de controle do IPI. | [optional] 
-**q_selo** | **int** | Quantidade de selo de controle do IPI. | [optional] 
-**c_enq** | **str** | Código de Enquadramento Legal do IPI (tabela a ser criada pela RFB). | 
-**ipi_trib** | [**NfeSefazIPITrib**](NfeSefazIPITrib.md) |  | [optional] 
-**ipint** | [**NfeSefazIPINT**](NfeSefazIPINT.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cnpj_prod** | **str** | CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os casos de exportação direta ou indireta. | [opcional] 
+**c_selo** | **str** | Código do selo de controle do IPI. | [opcional] 
+**q_selo** | **int** | Quantidade de selo de controle do IPI. | [opcional] 
+**c_enq** | **str** | Código de Enquadramento Legal do IPI (tabela a ser criada pela RFB). | 
+**ipi_trib** | [**NfeSefazIPITrib**](NfeSefazIPITrib.md) |  | [opcional] 
+**ipint** | [**NfeSefazIPINT**](NfeSefazIPINT.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

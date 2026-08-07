@@ -2,12 +2,13 @@
 
 Grupo de informações relativas aos valores do serviço prestado.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**v_receb** | **float** | Valor monetário recebido pelo intermediário do serviço (R$). | [optional] 
+**v_receb** | **float** | Valor monetário recebido pelo intermediário do serviço (R$). | [opcional] 
 **v_serv** | **float** | Valor dos serviços em R$. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

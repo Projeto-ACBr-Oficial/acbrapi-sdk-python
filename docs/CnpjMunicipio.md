@@ -2,13 +2,14 @@
 
 Município de jurisdição onde se encontra o estabelecimento.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**codigo_tom** | **str** | Código TOM do município. | [optional] 
-**codigo_ibge** | **str** | Código IBGE do município. | [optional] 
-**descricao** | **str** | Nome do município. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**codigo_tom** | **str** | Código TOM do município. | [opcional] 
+**codigo_ibge** | **str** | Código IBGE do município. | [opcional] 
+**descricao** | **str** | Nome do município. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

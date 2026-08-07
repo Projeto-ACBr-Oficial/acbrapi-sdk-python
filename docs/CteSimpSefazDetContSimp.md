@@ -2,13 +2,14 @@
 
 Grupo de informações de detalhamento dos conteiners  (Somente para Redespacho Intermediário e Serviço Vinculado a Multimodal).
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **n_cont** | **str** | Identificação do Container. | 
-**lacre** | [**list[CteSimpSefazLacreSimp]**](CteSimpSefazLacreSimp.md) |  | [optional] 
-**inf_doc** | [**CteSimpSefazInfDocSimp**](CteSimpSefazInfDocSimp.md) |  | [optional] 
+**lacre** | [**list[CteSimpSefazLacreSimp]**](CteSimpSefazLacreSimp.md) |  | [opcional] 
+**inf_doc** | [**CteSimpSefazInfDocSimp**](CteSimpSefazInfDocSimp.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

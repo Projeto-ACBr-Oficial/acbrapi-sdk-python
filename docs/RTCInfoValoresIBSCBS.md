@@ -2,12 +2,13 @@
 
 Grupo de informações relativas aos valores do serviço prestado para IBS e CBS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**g_ree_rep_res** | [**RTCInfoReeRepRes**](RTCInfoReeRepRes.md) |  | [optional] 
+**g_ree_rep_res** | [**RTCInfoReeRepRes**](RTCInfoReeRepRes.md) |  | [opcional] 
 **trib** | [**RTCInfoTributosIBSCBS**](RTCInfoTributosIBSCBS.md) |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

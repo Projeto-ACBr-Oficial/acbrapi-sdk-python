@@ -2,20 +2,21 @@
 
 Grupo de informações dos tributos IBS, CBS e Imposto Seletivo.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **cst** | **str** | Código Situação Tributária do IBS/CBS. | 
-**c_class_trib** | **str** |  | [optional] 
-**ind_doacao** | **int** | Indica se a operação é de doação. | [optional] 
-**g_ibscbs** | [**NfeSefazCIBS**](NfeSefazCIBS.md) |  | [optional] 
-**g_ibscbs_mono** | [**NfeSefazMonofasia**](NfeSefazMonofasia.md) |  | [optional] 
-**g_transf_cred** | [**NfeSefazTransfCred**](NfeSefazTransfCred.md) |  | [optional] 
-**g_ajuste_compet** | [**NfeSefazAjusteCompet**](NfeSefazAjusteCompet.md) |  | [optional] 
-**g_estorno_cred** | [**NfeSefazEstornoCred**](NfeSefazEstornoCred.md) |  | [optional] 
-**g_cred_pres_oper** | [**NfeSefazCredPresOper**](NfeSefazCredPresOper.md) |  | [optional] 
-**g_cred_pres_ibszfm** | [**NfeSefazCredPresIBSZFM**](NfeSefazCredPresIBSZFM.md) |  | [optional] 
+**c_class_trib** | **str** |  | [opcional] 
+**ind_doacao** | **int** | Indica se a operação é de doação. | [opcional] 
+**g_ibscbs** | [**NfeSefazCIBS**](NfeSefazCIBS.md) |  | [opcional] 
+**g_ibscbs_mono** | [**NfeSefazMonofasia**](NfeSefazMonofasia.md) |  | [opcional] 
+**g_transf_cred** | [**NfeSefazTransfCred**](NfeSefazTransfCred.md) |  | [opcional] 
+**g_ajuste_compet** | [**NfeSefazAjusteCompet**](NfeSefazAjusteCompet.md) |  | [opcional] 
+**g_estorno_cred** | [**NfeSefazEstornoCred**](NfeSefazEstornoCred.md) |  | [opcional] 
+**g_cred_pres_oper** | [**NfeSefazCredPresOper**](NfeSefazCredPresOper.md) |  | [opcional] 
+**g_cred_pres_ibszfm** | [**NfeSefazCredPresIBSZFM**](NfeSefazCredPresIBSZFM.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

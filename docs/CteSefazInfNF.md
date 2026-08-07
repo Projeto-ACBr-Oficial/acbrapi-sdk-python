@@ -2,11 +2,12 @@
 
 Informações das NF.  Este grupo deve ser informado quando o documento originário for NF.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**n_roma** | **str** | Número do Romaneio da NF. | [optional] 
-**n_ped** | **str** | Número do Pedido da NF. | [optional] 
+**n_roma** | **str** | Número do Romaneio da NF. | [opcional] 
+**n_ped** | **str** | Número do Pedido da NF. | [opcional] 
 **mod** | **str** | Modelo da Nota Fiscal.  Preencher com:  * 01 - NF Modelo 01/1A e Avulsa  * 04 - NF de Produtor | 
 **serie** | **str** | Série. | 
 **n_doc** | **str** | Número. | 
@@ -18,12 +19,12 @@ Name | Type | Description | Notes
 **v_prod** | **float** | Valor Total dos Produtos. | 
 **v_nf** | **float** | Valor Total da NF. | 
 **n_cfop** | **str** | CFOP Predominante.  CFOP da NF ou, na existência de mais de um, predominância pelo critério de valor econômico. | 
-**n_peso** | **float** | Peso total em Kg. | [optional] 
-**pin** | **str** | PIN SUFRAMA.  PIN atribuído pela SUFRAMA para a operação. | [optional] 
-**d_prev** | **date** | Data prevista de entrega.  Formato AAAA-MM-DD. | [optional] 
-**inf_unid_carga** | [**list[CteSefazUnidCarga]**](CteSefazUnidCarga.md) |  | [optional] 
-**inf_unid_transp** | [**list[CteSefazUnidadeTransp]**](CteSefazUnidadeTransp.md) |  | [optional] 
+**n_peso** | **float** | Peso total em Kg. | [opcional] 
+**pin** | **str** | PIN SUFRAMA.  PIN atribuído pela SUFRAMA para a operação. | [opcional] 
+**d_prev** | **date** | Data prevista de entrega.  Formato AAAA-MM-DD. | [opcional] 
+**inf_unid_carga** | [**list[CteSefazUnidCarga]**](CteSefazUnidCarga.md) |  | [opcional] 
+**inf_unid_transp** | [**list[CteSefazUnidadeTransp]**](CteSefazUnidadeTransp.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

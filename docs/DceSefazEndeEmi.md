@@ -2,21 +2,22 @@
 
 Endereço do emitente.    *Caso não seja informado, será utilizado o do cadastro da empresa.*
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**x_lgr** | **str** | Logradouro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**nro** | **str** | Número.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_cpl** | **str** | Complemento.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_bairro** | **str** | Bairro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**c_mun** | **str** | Código do município (utilizar a tabela do IBGE).    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**x_mun** | **str** | Nome do município.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**uf** | **str** | Sigla da UF.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**cep** | **str** | CEP.  Informar zeros não significativos.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
+**x_lgr** | **str** | Logradouro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**nro** | **str** | Número.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_cpl** | **str** | Complemento.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_bairro** | **str** | Bairro.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**c_mun** | **str** | Código do município (utilizar a tabela do IBGE).    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**x_mun** | **str** | Nome do município.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**uf** | **str** | Sigla da UF.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**cep** | **str** | CEP.  Informar zeros não significativos.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
 **c_pais** | **str** | Código do País.  * 1058&#x3D;Brasil | 
 **x_pais** | **str** | Nome do País exemplo: Brasil ou BRASIL. | 
-**fone** | **str** | Telefone.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
+**fone** | **str** | Telefone.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

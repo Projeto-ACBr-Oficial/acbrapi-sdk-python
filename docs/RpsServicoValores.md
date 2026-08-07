@@ -1,30 +1,31 @@
 # RpsServicoValores
 
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **valor_unitario** | **float** | Valor unitário do serviço. | 
-**valor_servicos** | **float** | Valor total do serviço. | [optional] 
-**valor_deducoes** | **float** |  | [optional] 
-**valor_pis** | **float** |  | [optional] 
-**valor_cofins** | **float** |  | [optional] 
-**valor_inss** | **float** |  | [optional] 
-**valor_ir** | **float** |  | [optional] 
-**valor_csll** | **float** |  | [optional] 
-**valor_outras_retencoes** | **float** |  | [optional] 
-**valor_iss** | **float** |  | [optional] 
-**valor_iss_retido** | **float** |  | [optional] 
-**valor_liquido** | **float** |  | [optional] 
-**aliquota_iss** | **float** |  | [optional] 
-**aliquota_pis** | **float** |  | [optional] 
-**aliquota_cofins** | **float** |  | [optional] 
-**aliquota_inss** | **float** |  | [optional] 
-**aliquota_ir** | **float** |  | [optional] 
-**aliquota_csll** | **float** |  | [optional] 
-**desconto_incondicionado** | **float** |  | [optional] 
-**desconto_condicionado** | **float** |  | [optional] 
+**valor_servicos** | **float** | Valor total do serviço. | [opcional] 
+**valor_deducoes** | **float** |  | [opcional] 
+**valor_pis** | **float** |  | [opcional] 
+**valor_cofins** | **float** |  | [opcional] 
+**valor_inss** | **float** |  | [opcional] 
+**valor_ir** | **float** |  | [opcional] 
+**valor_csll** | **float** |  | [opcional] 
+**valor_outras_retencoes** | **float** |  | [opcional] 
+**valor_iss** | **float** |  | [opcional] 
+**valor_iss_retido** | **float** |  | [opcional] 
+**valor_liquido** | **float** |  | [opcional] 
+**aliquota_iss** | **float** |  | [opcional] 
+**aliquota_pis** | **float** |  | [opcional] 
+**aliquota_cofins** | **float** |  | [opcional] 
+**aliquota_inss** | **float** |  | [opcional] 
+**aliquota_ir** | **float** |  | [opcional] 
+**aliquota_csll** | **float** |  | [opcional] 
+**desconto_incondicionado** | **float** |  | [opcional] 
+**desconto_condicionado** | **float** |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

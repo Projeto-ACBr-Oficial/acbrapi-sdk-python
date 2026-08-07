@@ -2,17 +2,18 @@
 
 Grupo de informações do endereço da obra do serviço prestado.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**cep** | **str** | Número do CEP. | [optional] 
-**end_ext** | [**EnderExtSimples**](EnderExtSimples.md) |  | [optional] 
+**cep** | **str** | Número do CEP. | [opcional] 
+**end_ext** | [**EnderExtSimples**](EnderExtSimples.md) |  | [opcional] 
 **x_lgr** | **str** | Tipo e nome do logradouro da localização do imóvel. | 
-**tp_lgr** | **str** | Tipo do Logradouro.    **Atenção**: Para emissões pelo Sistema Nacional NFS-e, esse campo é ignorado. | [optional] 
+**tp_lgr** | **str** | Tipo do Logradouro.    **Atenção**: Para emissões pelo Sistema Nacional NFS-e, esse campo é ignorado. | [opcional] 
 **nro** | **str** | Número do imóvel. | 
-**x_cpl** | **str** | Complemento do endereço. | [optional] 
+**x_cpl** | **str** | Complemento do endereço. | [opcional] 
 **x_bairro** | **str** | Bairro. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

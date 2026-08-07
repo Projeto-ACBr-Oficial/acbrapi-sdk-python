@@ -64,9 +64,3 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
-
-# Specific files
-.openapi-generator
-.DS_Store
-.openapi-generator-ignore
-.idea

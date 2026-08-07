@@ -2,15 +2,16 @@
 
 Grupo de informações do IBS e CBS.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **cst** | **str** | Código Situação Tributária do IBS/CBS. | 
-**c_class_trib** | **str** |  | [optional] 
-**ind_doacao** | **int** |  | [optional] 
-**g_ibscbs** | [**CteOsSefazCIBSOS**](CteOsSefazCIBSOS.md) |  | [optional] 
-**g_estorno_cred** | [**CteOsSefazEstornoCredOS**](CteOsSefazEstornoCredOS.md) |  | [optional] 
+**c_class_trib** | **str** |  | [opcional] 
+**ind_doacao** | **int** |  | [opcional] 
+**g_ibscbs** | [**CteOsSefazCIBSOS**](CteOsSefazCIBSOS.md) |  | [opcional] 
+**g_estorno_cred** | [**CteOsSefazEstornoCredOS**](CteOsSefazEstornoCredOS.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

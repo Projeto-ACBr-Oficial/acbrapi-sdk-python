@@ -1,13 +1,14 @@
 # MdfePedidoEncerramento
 
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**data_encerramento** | **date** | Data que o manifesto foi encerrado.    Opcional. Caso não seja informada, será utilizada a data em que a solicitação foi feita à API. | [optional] 
+**data_encerramento** | **date** | Data que o manifesto foi encerrado.    Opcional. Caso não seja informada, será utilizada a data em que a solicitação foi feita à API. | [opcional] 
 **uf** | **str** | UF de encerramento do manifesto. | 
 **codigo_municipio** | **str** | Código IBGE do Município de encerramento do manifesto. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

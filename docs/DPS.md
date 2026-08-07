@@ -2,12 +2,13 @@
 
 Grupo de informações da DPS relativas ao serviço prestado.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**serie** | **str** | Série do DPS. | [optional] 
-**n_dps** | **str** | Número do DPS. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**serie** | **str** | Série do DPS. | [opcional] 
+**n_dps** | **str** | Número do DPS. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

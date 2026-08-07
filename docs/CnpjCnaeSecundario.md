@@ -2,12 +2,13 @@
 
 Atividade econômica secundária do estabelecimento.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**codigo** | **str** | Código da atividade econômica. | [optional] 
-**descricao** | **str** | Nome da atividade econômica. | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**codigo** | **str** | Código da atividade econômica. | [opcional] 
+**descricao** | **str** | Nome da atividade econômica. | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

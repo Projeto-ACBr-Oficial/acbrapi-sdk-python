@@ -2,13 +2,14 @@
 
 Informações mais detalhadas do produto (usada na NFF).
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **x_emb** | **str** | Embalagem do produto. | 
 **q_vol_emb** | **float** | Volume do produto na embalagem. | 
 **u_emb** | **str** | Unidade de Medida da Embalagem. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

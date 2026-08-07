@@ -1,8 +1,8 @@
 # acbrapi_sdk.MdfeApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**baixar_pdf_cancelamento_mdfe**](MdfeApi.md#baixar_pdf_cancelamento_mdfe) | **GET** /mdfe/{id}/cancelamento/pdf | Baixar PDF do cancelamento
 [**baixar_pdf_encerramento_mdfe**](MdfeApi.md#baixar_pdf_encerramento_mdfe) | **GET** /mdfe/{id}/encerramento/pdf | Baixar PDF do encerramento
@@ -37,9 +37,9 @@ Method | HTTP request | Description
 
 Baixar PDF do cancelamento
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -63,9 +63,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -74,43 +74,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_pdf_cancelamento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_pdf_cancelamento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_pdf_cancelamento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_pdf_encerramento_mdfe**
 > file baixar_pdf_encerramento_mdfe(id)
 
 Baixar PDF do encerramento
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -134,9 +134,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -145,43 +145,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_pdf_encerramento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_pdf_encerramento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_pdf_encerramento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_pdf_evento_mdfe**
 > file baixar_pdf_evento_mdfe(id)
 
 Baixar PDF do evento
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -205,9 +205,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do evento gerado pela API.
 
@@ -216,43 +216,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_pdf_evento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_pdf_evento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_pdf_evento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do evento gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_pdf_mdfe**
 > file baixar_pdf_mdfe(id, logotipo=logotipo)
 
 Baixar PDF do DAMDFE
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -276,47 +276,47 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
-logotipo = False # bool | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. (optional) (default to False)
+logotipo = False # bool | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. (opcional) (default False)
 
     try:
         # Baixar PDF do DAMDFE
         api_response = api_instance.baixar_pdf_mdfe(id, logotipo=logotipo)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_pdf_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_pdf_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
- **logotipo** | **bool**| Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [optional] [default to False]
+ **logotipo** | **bool**| Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [opcional] [default False]
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_cancelamento_mdfe**
 > file baixar_xml_cancelamento_mdfe(id)
@@ -325,9 +325,9 @@ Baixar XML do cancelamento
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -351,9 +351,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -362,34 +362,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_cancelamento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_cancelamento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_cancelamento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_encerramento_mdfe**
 > file baixar_xml_encerramento_mdfe(id)
@@ -398,9 +398,9 @@ Baixar XML do encerramento
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -424,9 +424,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -435,34 +435,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_encerramento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_encerramento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_encerramento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_evento_mdfe**
 > file baixar_xml_evento_mdfe(id)
@@ -471,9 +471,9 @@ Baixar XML do evento
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -497,9 +497,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do evento gerado pela API.
 
@@ -508,34 +508,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_evento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_evento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_evento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do evento gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_mdfe**
 > file baixar_xml_mdfe(id)
@@ -544,9 +544,9 @@ Baixar XML do MDF-e processado
 
 Utilize esse endpoint para obter o XML do manifesto enviado para a SEFAZ, complementado com a informação do protocolo de autorização ou denegação de uso (TAG raiz `mdfeProc`).    O XML só estará disponível nesse endpoint caso o manifesto tenha sido autorizado ou denegado pela SEFAZ. Para obter o XML nos demais casos, utilize o endpoint `GET /mdfe/{id}/xml/manifesto`.    **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -570,9 +570,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -581,34 +581,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_mdfe_manifesto**
 > file baixar_xml_mdfe_manifesto(id)
@@ -617,9 +617,9 @@ Baixar XML do MDF-e
 
 Utilize esse endpoint para obter o XML do manifesto enviado para a SEFAZ.    O XML estará disponível nesse endpoint mesmo em casos que o manifesto tenha sido rejeitado.    **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -643,9 +643,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único da MDF-e gerado pela API.
 
@@ -654,34 +654,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_mdfe_manifesto(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_mdfe_manifesto: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_mdfe_manifesto: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **baixar_xml_mdfe_protocolo**
 > file baixar_xml_mdfe_protocolo(id)
@@ -690,9 +690,9 @@ Baixar XML do Protocolo da SEFAZ
 
 **Informações adicionais**:  - Consumo: Primeira requisição isenta, posteriores 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -716,9 +716,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único da MDF-e gerado pela API.
 
@@ -727,34 +727,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.baixar_xml_mdfe_protocolo(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->baixar_xml_mdfe_protocolo: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->baixar_xml_mdfe_protocolo: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 **file**
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: */*
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **cancelar_mdfe**
 > DfeCancelamento cancelar_mdfe(id, body=body)
@@ -763,9 +763,9 @@ Cancelar um MDF-e autorizado
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -789,56 +789,56 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
-body = acbrapi_sdk.MdfePedidoCancelamento() # MdfePedidoCancelamento | Dados do cancelamento. (optional)
+body = acbrapi_sdk.MdfePedidoCancelamento() # MdfePedidoCancelamento | Dados do cancelamento. (opcional)
 
     try:
         # Cancelar um MDF-e autorizado
         api_response = api_instance.cancelar_mdfe(id, body=body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->cancelar_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->cancelar_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
- **body** | [**MdfePedidoCancelamento**](MdfePedidoCancelamento.md)| Dados do cancelamento. | [optional] 
+ **body** | [**MdfePedidoCancelamento**](MdfePedidoCancelamento.md)| Dados do cancelamento. | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeCancelamento**](DfeCancelamento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_cancelamento_mdfe**
 > DfeCancelamento consultar_cancelamento_mdfe(id)
 
 Consultar o cancelamento do MDF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -862,9 +862,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -873,43 +873,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_cancelamento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_cancelamento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_cancelamento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeCancelamento**](DfeCancelamento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_encerramento_mdfe**
 > MdfeEncerramento consultar_encerramento_mdfe(id)
 
 Consultar encerramento do MDF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -933,9 +933,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -944,43 +944,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_encerramento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_encerramento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_encerramento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**MdfeEncerramento**](MdfeEncerramento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_evento_mdfe**
 > DfeEvento consultar_evento_mdfe(id)
 
 Consultar evento do MDF-e
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1004,9 +1004,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do evento gerado pela API.
 
@@ -1015,34 +1015,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_evento_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_evento_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_evento_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do evento gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeEvento**](DfeEvento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_lote_mdfe**
 > DfeLote consultar_lote_mdfe(id)
@@ -1051,9 +1051,9 @@ Consultar lote de MDF-e
 
 Consulta os detalhes de um lote já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de lotes e a API irá retornar as informações do lote correspondente.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1077,9 +1077,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do lote gerado pela API.
 
@@ -1088,34 +1088,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_lote_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_lote_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_lote_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do lote gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeLote**](DfeLote.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_mdfe**
 > Dfe consultar_mdfe(id)
@@ -1124,9 +1124,9 @@ Consultar manifesto
 
 Consulta os detalhes de um manifesto já existente. Forneça o ID único obtido de uma requisição de emissão ou de listagem de manifestos e a API irá retornar as informações do manifesto correspondente.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1150,9 +1150,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -1161,43 +1161,43 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**Dfe**](Dfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_mdfe_nao_encerrados**
 > MdfeNaoEncerrados consultar_mdfe_nao_encerrados(cpf_cnpj)
 
 Consulta MDF-e não encerrados
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1221,9 +1221,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF/CNPJ do emitente.  Utilize o valor sem máscara.
 
@@ -1232,34 +1232,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_mdfe_nao_encerrados(cpf_cnpj)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_mdfe_nao_encerrados: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_mdfe_nao_encerrados: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF/CNPJ do emitente.  Utilize o valor sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**MdfeNaoEncerrados**](MdfeNaoEncerrados.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **consultar_status_sefaz_mdfe**
 > DfeSefazStatus consultar_status_sefaz_mdfe(cpf_cnpj, autorizador=autorizador)
@@ -1268,9 +1268,9 @@ Consulta do Status do Serviço na SEFAZ Autorizadora
 
 Consulta do status do serviço prestado pelo Portal da Secretaria de Fazenda Estadual.    A API mantém a última consulta em cache por 5 minutos, evitando sobrecarregar desnecessariamente os servidores da SEFAZ (conforme orientação do MOC - versão 3.0.0a, item 4.6.3). Dessa forma, você poderá chamar esse endpoint quantas vezes quiser, sem preocupar-se em ter o seu CNPJ bloqueado por consumo indevido (Rejeição 656).
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1294,47 +1294,47 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | CPF/CNPJ do emitente.  Utilize o valor sem máscara.
-autorizador = 'autorizador_example' # str | Ambiente Autorizador.    Autorizadores disponíveis: `SVRS`.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* (optional)
+autorizador = 'autorizador_example' # str | Ambiente Autorizador.    Autorizadores disponíveis: `SVRS`.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* (opcional)
 
     try:
         # Consulta do Status do Serviço na SEFAZ Autorizadora
         api_response = api_instance.consultar_status_sefaz_mdfe(cpf_cnpj, autorizador=autorizador)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->consultar_status_sefaz_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->consultar_status_sefaz_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| CPF/CNPJ do emitente.  Utilize o valor sem máscara. | 
- **autorizador** | **str**| Ambiente Autorizador.    Autorizadores disponíveis: &#x60;SVRS&#x60;.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* | [optional] 
+ **autorizador** | **str**| Ambiente Autorizador.    Autorizadores disponíveis: &#x60;SVRS&#x60;.    *Caso não seja informado, será utilizado o ambiente autorizador da UF do emitente.* | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeSefazStatus**](DfeSefazStatus.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **emitir_lote_mdfe**
 > DfeLote emitir_lote_mdfe(body)
@@ -1343,9 +1343,9 @@ Emitir lote de MDF-e
 
 **Informações adicionais**:  - Consumo: 1 unidade por MDF-e.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1369,9 +1369,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     body = acbrapi_sdk.MdfePedidoEmissaoLote() # MdfePedidoEmissaoLote | 
 
@@ -1380,34 +1380,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.emitir_lote_mdfe(body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->emitir_lote_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->emitir_lote_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **body** | [**MdfePedidoEmissaoLote**](MdfePedidoEmissaoLote.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeLote**](DfeLote.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **emitir_mdfe**
 > Dfe emitir_mdfe(body)
@@ -1416,9 +1416,9 @@ Emitir MDF-e
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1442,9 +1442,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     body = acbrapi_sdk.MdfePedidoEmissao() # MdfePedidoEmissao | 
 
@@ -1453,34 +1453,34 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.emitir_mdfe(body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->emitir_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->emitir_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **body** | [**MdfePedidoEmissao**](MdfePedidoEmissao.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**Dfe**](Dfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **encerrar_mdfe**
 > MdfeEncerramento encerrar_mdfe(id, body)
@@ -1489,9 +1489,9 @@ Encerrar um MDF-e autorizado
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1515,9 +1515,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 body = acbrapi_sdk.MdfePedidoEncerramento() # MdfePedidoEncerramento | 
@@ -1527,35 +1527,35 @@ body = acbrapi_sdk.MdfePedidoEncerramento() # MdfePedidoEncerramento |
         api_response = api_instance.encerrar_mdfe(id, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->encerrar_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->encerrar_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
  **body** | [**MdfePedidoEncerramento**](MdfePedidoEncerramento.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**MdfeEncerramento**](MdfeEncerramento.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **incluir_condutor_mdfe**
 > MdfeInclusaoCondutor incluir_condutor_mdfe(id, body)
@@ -1564,9 +1564,9 @@ Incluir um condutor em um MDF-e autorizado
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1590,9 +1590,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 body = acbrapi_sdk.MdfePedidoInclusaoCondutor() # MdfePedidoInclusaoCondutor | 
@@ -1602,35 +1602,35 @@ body = acbrapi_sdk.MdfePedidoInclusaoCondutor() # MdfePedidoInclusaoCondutor |
         api_response = api_instance.incluir_condutor_mdfe(id, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->incluir_condutor_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->incluir_condutor_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
  **body** | [**MdfePedidoInclusaoCondutor**](MdfePedidoInclusaoCondutor.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**MdfeInclusaoCondutor**](MdfeInclusaoCondutor.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **incluir_dfe_mdfe**
 > MdfeInclusaoDfe incluir_dfe_mdfe(id, body)
@@ -1639,9 +1639,9 @@ Incluir um DF-e em um MDF-e autorizado
 
 **Informações adicionais**:  - Consumo: 1 unidade por requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1665,9 +1665,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 body = acbrapi_sdk.MdfePedidoInclusaoDfe() # MdfePedidoInclusaoDfe | 
@@ -1677,35 +1677,35 @@ body = acbrapi_sdk.MdfePedidoInclusaoDfe() # MdfePedidoInclusaoDfe |
         api_response = api_instance.incluir_dfe_mdfe(id, body)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->incluir_dfe_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->incluir_dfe_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
  **body** | [**MdfePedidoInclusaoDfe**](MdfePedidoInclusaoDfe.md)|  | 
 
-### Return type
+### Tipo do retorno
 
 [**MdfeInclusaoDfe**](MdfeInclusaoDfe.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_lotes_mdfe**
 > DfeLoteListagem listar_lotes_mdfe(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia)
@@ -1714,9 +1714,9 @@ Listar lotes de MDF-e
 
 Retorna a lista dos lotes de acordo com os critérios de busca utilizados. Os lotes são retornados ordenados pela data da criação, com os mais recentes aparecendo primeiro.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1740,55 +1740,55 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | Filtrar pelo CPF ou CNPJ do emitente.  Utilize o valor sem máscara.
 ambiente = 'ambiente_example' # str | Identificação do Ambiente.    Valores aceitos: homologacao, producao
-top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (optional) (default to 10)
-skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (optional) (default to 0)
-inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (optional) (default to False)
-referencia = 'referencia_example' # str |  (optional)
+top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (opcional) (default 10)
+skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (opcional) (default 0)
+inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (opcional) (default False)
+referencia = 'referencia_example' # str |  (opcional)
 
     try:
         # Listar lotes de MDF-e
         api_response = api_instance.listar_lotes_mdfe(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->listar_lotes_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->listar_lotes_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| Filtrar pelo CPF ou CNPJ do emitente.  Utilize o valor sem máscara. | 
  **ambiente** | **str**| Identificação do Ambiente.    Valores aceitos: homologacao, producao | 
- **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional] [default to 10]
- **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional] [default to 0]
- **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional] [default to False]
- **referencia** | **str**|  | [optional] 
+ **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [opcional] [default 10]
+ **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [opcional] [default 0]
+ **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [opcional] [default False]
+ **referencia** | **str**|  | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeLoteListagem**](DfeLoteListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_mdfe**
 > DfeListagem listar_mdfe(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia, chave=chave, serie=serie)
@@ -1797,9 +1797,9 @@ Listar MDF-e
 
 Retorna a lista de manifestos de acordo com os critérios de busca utilizados. Os manifestos são retornados ordenados pela data da criação, com os mais recentes aparecendo primeiro.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1823,59 +1823,59 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     cpf_cnpj = 'cpf_cnpj_example' # str | Filtrar pelo CPF ou CNPJ do emitente.    Utilize o valor sem máscara.
 ambiente = 'ambiente_example' # str | Identificação do Ambiente.    Valores aceitos: homologacao, producao
-top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (optional) (default to 10)
-skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (optional) (default to 0)
-inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (optional) (default to False)
-referencia = 'referencia_example' # str | Seu identificador único para o documento. (optional)
-chave = 'chave_example' # str | Chave de acesso do DF-e. (optional)
-serie = 'serie_example' # str | Série do DF-e. (optional)
+top = 10 # int | Limite no número de objetos a serem retornados pela API, entre 1 e 100. (opcional) (default 10)
+skip = 0 # int | Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. (opcional) (default 0)
+inlinecount = False # bool | Inclui no JSON de resposta, na propriedade `@count`, o número total de registros que o filtro retornaria, independente dos filtros de paginação. (opcional) (default False)
+referencia = 'referencia_example' # str | Seu identificador único para o documento. (opcional)
+chave = 'chave_example' # str | Chave de acesso do DF-e. (opcional)
+serie = 'serie_example' # str | Série do DF-e. (opcional)
 
     try:
         # Listar MDF-e
         api_response = api_instance.listar_mdfe(cpf_cnpj, ambiente, top=top, skip=skip, inlinecount=inlinecount, referencia=referencia, chave=chave, serie=serie)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->listar_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->listar_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cpf_cnpj** | **str**| Filtrar pelo CPF ou CNPJ do emitente.    Utilize o valor sem máscara. | 
  **ambiente** | **str**| Identificação do Ambiente.    Valores aceitos: homologacao, producao | 
- **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [optional] [default to 10]
- **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [optional] [default to 0]
- **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [optional] [default to False]
- **referencia** | **str**| Seu identificador único para o documento. | [optional] 
- **chave** | **str**| Chave de acesso do DF-e. | [optional] 
- **serie** | **str**| Série do DF-e. | [optional] 
+ **top** | **int**| Limite no número de objetos a serem retornados pela API, entre 1 e 100. | [opcional] [default 10]
+ **skip** | **int**| Quantidade de objetos que serão ignorados antes da lista começar a ser retornada. | [opcional] [default 0]
+ **inlinecount** | **bool**| Inclui no JSON de resposta, na propriedade &#x60;@count&#x60;, o número total de registros que o filtro retornaria, independente dos filtros de paginação. | [opcional] [default False]
+ **referencia** | **str**| Seu identificador único para o documento. | [opcional] 
+ **chave** | **str**| Chave de acesso do DF-e. | [opcional] 
+ **serie** | **str**| Série do DF-e. | [opcional] 
 
-### Return type
+### Tipo do retorno
 
 [**DfeListagem**](DfeListagem.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **sincronizar_mdfe**
 > DfeSincronizacao sincronizar_mdfe(id)
@@ -1884,9 +1884,9 @@ Sincroniza dados no MDF-e a partir da SEFAZ
 
 Realiza a sincronização dos dados a partir da consulta da situação atual da MDF-e na Base de Dados do Portal da Secretaria de Fazenda Estadual.    **Cenários de uso**:  * Sincronizar um manifesto que se encontra com o status `erro` na API, mas está autorizado na SEFAZ (útil em casos de erros de transmissão com a SEFAZ, como instabilidades e timeouts).  * Sincronizar um manifesto que se encontra com o status `autorizado`na API, mas está cancelado ou encerrado na SEFAZ.  * Sincronizar todos os eventos de Cancelamento, Encerramento, Inclusão de condutor e Inclusão de DF-e de um manifesto que porventura não tenham sido feitos a partir da API.    **Informações adicionais**:  - Consumo: 1 unidade por evento sincronizado ou requisição.
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -1910,9 +1910,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.MdfeApi(api_client)
     id = 'id_example' # str | ID único do MDF-e gerado pela API.
 
@@ -1921,32 +1921,32 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.sincronizar_mdfe(id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling MdfeApi->sincronizar_mdfe: %s\n" % e)
+        print("Excecao ao chamar MdfeApi->sincronizar_mdfe: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único do MDF-e gerado pela API. | 
 
-### Return type
+### Tipo do retorno
 
 [**DfeSincronizacao**](DfeSincronizacao.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

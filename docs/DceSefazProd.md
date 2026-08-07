@@ -2,8 +2,9 @@
 
 Dados do Produto ou Serviço.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **x_prod** | **str** | Descrição do produto, bem ou mercadoria. | 
 **ncm** | **str** | Código NCM.  Capítulo do Código NCM com 2 dígitos ou NCM completo. | 
@@ -11,6 +12,6 @@ Name | Type | Description | Notes
 **v_un_com** | **float** | Valor unitário do item. | 
 **v_prod** | **float** | Valor total brutp do item. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

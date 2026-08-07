@@ -2,15 +2,16 @@
 
 Grupo de informações do fornecedor do documento referenciado.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
-**cnpj** | **str** | Número da inscrição no Cadastro Nacional de Pessoa Jurídica (CNPJ) do Fornecedor do serviço. | [optional] 
-**cpf** | **str** | Número da inscrição no Cadastro de Pessoa Física (CPF) do Fornecedor do serviço. | [optional] 
-**nif** | **str** | Este elemento só deverá ser preenchido para fornecedores não residentes no Brasil. | [optional] 
-**c_nao_nif** | **int** | Motivo para não informação do NIF:  * 0 - Não informado na nota de origem  * 1 - Dispensado do NIF  * 2 - Não exigência do NIF | [optional] 
+**cnpj** | **str** | Número da inscrição no Cadastro Nacional de Pessoa Jurídica (CNPJ) do Fornecedor do serviço. | [opcional] 
+**cpf** | **str** | Número da inscrição no Cadastro de Pessoa Física (CPF) do Fornecedor do serviço. | [opcional] 
+**nif** | **str** | Este elemento só deverá ser preenchido para fornecedores não residentes no Brasil. | [opcional] 
+**c_nao_nif** | **int** | Motivo para não informação do NIF:  * 0 - Não informado na nota de origem  * 1 - Dispensado do NIF  * 2 - Não exigência do NIF | [opcional] 
 **x_nome** | **str** | Nome / Razão Social do do Fornecedor do serviço. | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

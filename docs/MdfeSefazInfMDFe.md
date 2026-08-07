@@ -2,24 +2,25 @@
 
 Informações do MDF-e.
 
-## Properties
-Name | Type | Description | Notes
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **versao** | **str** | Versão do leiaute.  Ex: \&quot;3.00\&quot;. | 
-**id** | **str** | Identificador da tag a ser assinada.  Informar a chave de acesso do MDF-e e precedida do literal \&quot;MDFe\&quot;.    *Geramos automaticamente quando nenhum valor é informado.* | [optional] 
+**id** | **str** | Identificador da tag a ser assinada.  Informar a chave de acesso do MDF-e e precedida do literal \&quot;MDFe\&quot;.    *Geramos automaticamente quando nenhum valor é informado.* | [opcional] 
 **ide** | [**MdfeSefazIde**](MdfeSefazIde.md) |  | 
 **emit** | [**MdfeSefazEmit**](MdfeSefazEmit.md) |  | 
 **inf_modal** | [**MdfeSefazInfModal**](MdfeSefazInfModal.md) |  | 
 **inf_doc** | [**MdfeSefazInfDoc**](MdfeSefazInfDoc.md) |  | 
-**seg** | [**list[MdfeSefazSeg]**](MdfeSefazSeg.md) |  | [optional] 
-**prod_pred** | [**MdfeSefazProdPred**](MdfeSefazProdPred.md) |  | [optional] 
+**seg** | [**list[MdfeSefazSeg]**](MdfeSefazSeg.md) |  | [opcional] 
+**prod_pred** | [**MdfeSefazProdPred**](MdfeSefazProdPred.md) |  | [opcional] 
 **tot** | [**MdfeSefazTot**](MdfeSefazTot.md) |  | 
-**lacres** | [**list[MdfeSefazLacres]**](MdfeSefazLacres.md) |  | [optional] 
-**aut_xml** | [**list[MdfeSefazAutXML]**](MdfeSefazAutXML.md) |  | [optional] 
-**inf_adic** | [**MdfeSefazInfAdic**](MdfeSefazInfAdic.md) |  | [optional] 
-**inf_resp_tec** | [**MdfeSefazRespTec**](MdfeSefazRespTec.md) |  | [optional] 
-**inf_solic_nff** | [**MdfeSefazInfSolicNFF**](MdfeSefazInfSolicNFF.md) |  | [optional] 
+**lacres** | [**list[MdfeSefazLacres]**](MdfeSefazLacres.md) |  | [opcional] 
+**aut_xml** | [**list[MdfeSefazAutXML]**](MdfeSefazAutXML.md) |  | [opcional] 
+**inf_adic** | [**MdfeSefazInfAdic**](MdfeSefazInfAdic.md) |  | [opcional] 
+**inf_resp_tec** | [**MdfeSefazRespTec**](MdfeSefazRespTec.md) |  | [opcional] 
+**inf_solic_nff** | [**MdfeSefazInfSolicNFF**](MdfeSefazInfSolicNFF.md) |  | [opcional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

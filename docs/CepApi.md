@@ -1,8 +1,8 @@
 # acbrapi_sdk.CepApi
 
-All URIs are relative to *https://prod.acbr.api.br*
+Todas as URIs relativas a *https://prod.acbr.api.br*
 
-Method | HTTP request | Description
+Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**consultar_cep**](CepApi.md#consultar_cep) | **GET** /cep/{Cep} | Consultar endereço através do CEP
 
@@ -14,9 +14,9 @@ Consultar endereço através do CEP
 
 **Informações adicionais**:  - Consumo: 0,1 unidade requisição.  - Em sandbox, a consulta é permitida somente para os seguintes CEP:    `18270000` Tatuí/SP    `01310300` São Paulo/SP    `22010000` Rio de Janeiro/RJ    `80020130` Curitiba/PR
 
-### Example
+### Exemplo
 
-* OAuth Authentication (oauth2):
+* Autenticação OAuth (oauth2):
 ```python
 from __future__ import print_function
 import time
@@ -40,9 +40,9 @@ configuration = acbrapi_sdk.Configuration(
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
-# Enter a context with an instance of the API client
+# Abre um contexto com uma instancia do cliente da API
 with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.CepApi(api_client)
     cep = 'cep_example' # str | CEP sem máscara.
 
@@ -51,32 +51,32 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
         api_response = api_instance.consultar_cep(cep)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling CepApi->consultar_cep: %s\n" % e)
+        print("Excecao ao chamar CepApi->consultar_cep: %s\n" % e)
 ```
 
-### Parameters
+### Parâmetros
 
-Name | Type | Description  | Notes
+Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **cep** | **str**| CEP sem máscara. | 
 
-### Return type
+### Tipo do retorno
 
 [**CepEndereco**](CepEndereco.md)
 
-### Authorization
+### Autorização
 
 [oauth2](../README.md#oauth2)
 
-### HTTP request headers
+### Headers HTTP da requisição
 
- - **Content-Type**: Not defined
+ - **Content-Type**: Não definido
  - **Accept**: application/json
 
-### HTTP response details
-| Status code | Description | Response headers |
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
 |-------------|-------------|------------------|
 **200** | Successful response |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 

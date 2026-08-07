@@ -2,14 +2,15 @@
 
 Identificação da DCe.
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cnpj** | **str** | Número do CNPJ do emitente. | [optional] 
-**cpf** | **str** | Número do CPF do emitente.  Informar os zeros não significativos. | [optional] 
-**x_nome** | **str** | Razão social ou Nome do emitente.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [optional] 
-**ender_emit** | [**DceSefazEndeEmi**](DceSefazEndeEmi.md) |  | [optional] 
+## Propriedades
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**cnpj** | **str** | Número do CNPJ do emitente. | [opcional] 
+**cpf** | **str** | Número do CPF do emitente.  Informar os zeros não significativos. | [opcional] 
+**x_nome** | **str** | Razão social ou Nome do emitente.    *Caso não seja informado, será utilizado o do cadastro da empresa.* | [opcional] 
+**ender_emit** | [**DceSefazEndeEmi**](DceSefazEndeEmi.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 
 

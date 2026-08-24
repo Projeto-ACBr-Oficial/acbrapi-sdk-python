@@ -9,7 +9,7 @@ Nome | Tipo | Descrição | Comentários
 **cst** | **str** | Código Situação Tributária do IBS/CBS. | 
 **c_class_trib** | **str** |  | [opcional] 
 **ind_doacao** | **int** | Indica se a operação é de doação. | [opcional] 
-**g_ibscbs** | [**NfeSefazCIBS**](NfeSefazCIBS.md) |  | [opcional] 
+**g_ibscbs** | [**NfeSefazCIBSNFe**](NfeSefazCIBSNFe.md) |  | [opcional] 
 **g_ibscbs_mono** | [**NfeSefazMonofasia**](NfeSefazMonofasia.md) |  | [opcional] 
 **g_transf_cred** | [**NfeSefazTransfCred**](NfeSefazTransfCred.md) |  | [opcional] 
 **g_ajuste_compet** | [**NfeSefazAjusteCompet**](NfeSefazAjusteCompet.md) |  | [opcional] 

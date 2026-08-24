@@ -10,6 +10,7 @@ Nome | Tipo | Descrição | Comentários
 **g_dif** | [**NfeSefazDif**](NfeSefazDif.md) |  | [opcional] 
 **g_dev_trib** | [**NfeSefazDevTrib**](NfeSefazDevTrib.md) |  | [opcional] 
 **g_red** | [**NfeSefazRed**](NfeSefazRed.md) |  | [opcional] 
+**g_alczfmcbs** | [**NfeSefazALCZFMCBSNFe**](NfeSefazALCZFMCBSNFe.md) |  | [opcional] 
 **v_cbs** | **float** | Valor da CBS. | 
 
 [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)

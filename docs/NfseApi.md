@@ -14,9 +14,7 @@ Método | Endpoint | Descrição
 [**consultar_lote_nfse**](NfseApi.md#consultar_lote_nfse) | **GET** /nfse/lotes/{id} | Consultar lote de NFS-e
 [**consultar_metadados**](NfseApi.md#consultar_metadados) | **GET** /nfse/cidades/{codigo_ibge} | Consultar metadados
 [**consultar_nfse**](NfseApi.md#consultar_nfse) | **GET** /nfse/{id} | Consultar NFS-e
-[**emitir_lote_nfse**](NfseApi.md#emitir_lote_nfse) | **POST** /nfse/lotes | Emitir lote de NFS-e
 [**emitir_lote_nfse_dps**](NfseApi.md#emitir_lote_nfse_dps) | **POST** /nfse/dps/lotes | Emitir lote de NFS-e
-[**emitir_nfse**](NfseApi.md#emitir_nfse) | **POST** /nfse | Emitir NFS-e
 [**emitir_nfse_dps**](NfseApi.md#emitir_nfse_dps) | **POST** /nfse/dps | Emitir NFS-e
 [**listar_lotes_nfse**](NfseApi.md#listar_lotes_nfse) | **GET** /nfse/lotes | Listar lotes de NFS-e
 [**listar_nfse**](NfseApi.md#listar_nfse) | **GET** /nfse | Listar NFS-e
@@ -751,79 +749,6 @@ Nome | Tipo | Descrição  | Comentários
 
 [[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
-# **emitir_lote_nfse**
-> RpsLote emitir_lote_nfse(body)
-
-Emitir lote de NFS-e
-
-**Informações adicionais**:  - Consumo: 1 unidade por NFS-e.
-
-### Exemplo
-
-* Autenticação OAuth (oauth2):
-```python
-from __future__ import print_function
-import time
-import acbrapi_sdk
-from acbrapi_sdk.rest import ApiException
-from pprint import pprint
-# Definir o host e opcional; o padrao e https://prod.acbr.api.br
-# Veja configuration.py para a lista de parametros de configuracao suportados.
-configuration = acbrapi_sdk.Configuration(
-    host = "https://prod.acbr.api.br"
-)
-
-# O cliente deve configurar os parametros de autenticacao e autorizacao
-# de acordo com a politica de seguranca do servidor da API.
-# Abaixo ha exemplos para cada metodo de autenticacao; use o que
-# atende ao seu caso de uso.
-
-# Configura o token de acesso OAuth2 para autorizacao: oauth2
-configuration = acbrapi_sdk.Configuration(
-    host = "https://prod.acbr.api.br"
-)
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# Abre um contexto com uma instancia do cliente da API
-with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Cria uma instancia da classe da API
-    api_instance = acbrapi_sdk.NfseApi(api_client)
-    body = acbrapi_sdk.RpsPedidoEmissaoLote() # RpsPedidoEmissaoLote | 
-
-    try:
-        # Emitir lote de NFS-e
-        api_response = api_instance.emitir_lote_nfse(body)
-        pprint(api_response)
-    except ApiException as e:
-        print("Excecao ao chamar NfseApi->emitir_lote_nfse: %s\n" % e)
-```
-
-### Parâmetros
-
-Nome | Tipo | Descrição  | Comentários
-------------- | ------------- | ------------- | -------------
- **body** | [**RpsPedidoEmissaoLote**](RpsPedidoEmissaoLote.md)|  | 
-
-### Tipo do retorno
-
-[**RpsLote**](RpsLote.md)
-
-### Autorização
-
-[oauth2](../README.md#oauth2)
-
-### Headers HTTP da requisição
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### Respostas HTTP
-| Código | Descrição | Headers da resposta |
-|-------------|-------------|------------------|
-**200** | Successful response |  -  |
-
-[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
-
 # **emitir_lote_nfse_dps**
 > RpsLote emitir_lote_nfse_dps(body)
 
@@ -880,79 +805,6 @@ Nome | Tipo | Descrição  | Comentários
 ### Tipo do retorno
 
 [**RpsLote**](RpsLote.md)
-
-### Autorização
-
-[oauth2](../README.md#oauth2)
-
-### Headers HTTP da requisição
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### Respostas HTTP
-| Código | Descrição | Headers da resposta |
-|-------------|-------------|------------------|
-**200** | Successful response |  -  |
-
-[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
-
-# **emitir_nfse**
-> Nfse emitir_nfse(body)
-
-Emitir NFS-e
-
-**Informações adicionais**:  - Consumo: 1 unidade por requisição.
-
-### Exemplo
-
-* Autenticação OAuth (oauth2):
-```python
-from __future__ import print_function
-import time
-import acbrapi_sdk
-from acbrapi_sdk.rest import ApiException
-from pprint import pprint
-# Definir o host e opcional; o padrao e https://prod.acbr.api.br
-# Veja configuration.py para a lista de parametros de configuracao suportados.
-configuration = acbrapi_sdk.Configuration(
-    host = "https://prod.acbr.api.br"
-)
-
-# O cliente deve configurar os parametros de autenticacao e autorizacao
-# de acordo com a politica de seguranca do servidor da API.
-# Abaixo ha exemplos para cada metodo de autenticacao; use o que
-# atende ao seu caso de uso.
-
-# Configura o token de acesso OAuth2 para autorizacao: oauth2
-configuration = acbrapi_sdk.Configuration(
-    host = "https://prod.acbr.api.br"
-)
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# Abre um contexto com uma instancia do cliente da API
-with acbrapi_sdk.ApiClient(configuration) as api_client:
-    # Cria uma instancia da classe da API
-    api_instance = acbrapi_sdk.NfseApi(api_client)
-    body = acbrapi_sdk.NfsePedidoEmissao() # NfsePedidoEmissao | 
-
-    try:
-        # Emitir NFS-e
-        api_response = api_instance.emitir_nfse(body)
-        pprint(api_response)
-    except ApiException as e:
-        print("Excecao ao chamar NfseApi->emitir_nfse: %s\n" % e)
-```
-
-### Parâmetros
-
-Nome | Tipo | Descrição  | Comentários
-------------- | ------------- | ------------- | -------------
- **body** | [**NfsePedidoEmissao**](NfsePedidoEmissao.md)|  | 
-
-### Tipo do retorno
-
-[**Nfse**](Nfse.md)
 
 ### Autorização
 

@@ -316,9 +316,7 @@ Classe | Método | Requisição HTTP | Descrição
 *NfseApi* | [**consultar_lote_nfse**](docs/NfseApi.md#consultar_lote_nfse) | **GET** /nfse/lotes/{id} | Consultar lote de NFS-e
 *NfseApi* | [**consultar_metadados**](docs/NfseApi.md#consultar_metadados) | **GET** /nfse/cidades/{codigo_ibge} | Consultar metadados
 *NfseApi* | [**consultar_nfse**](docs/NfseApi.md#consultar_nfse) | **GET** /nfse/{id} | Consultar NFS-e
-*NfseApi* | [**emitir_lote_nfse**](docs/NfseApi.md#emitir_lote_nfse) | **POST** /nfse/lotes | Emitir lote de NFS-e
 *NfseApi* | [**emitir_lote_nfse_dps**](docs/NfseApi.md#emitir_lote_nfse_dps) | **POST** /nfse/dps/lotes | Emitir lote de NFS-e
-*NfseApi* | [**emitir_nfse**](docs/NfseApi.md#emitir_nfse) | **POST** /nfse | Emitir NFS-e
 *NfseApi* | [**emitir_nfse_dps**](docs/NfseApi.md#emitir_nfse_dps) | **POST** /nfse/dps | Emitir NFS-e
 *NfseApi* | [**listar_lotes_nfse**](docs/NfseApi.md#listar_lotes_nfse) | **GET** /nfse/lotes | Listar lotes de NFS-e
 *NfseApi* | [**listar_nfse**](docs/NfseApi.md#listar_nfse) | **GET** /nfse | Listar NFS-e
@@ -1014,7 +1012,6 @@ Classe | Método | Requisição HTTP | Descrição
  - [NfseLoteDpsPedidoEmissao](docs/NfseLoteDpsPedidoEmissao.md)
  - [NfseMensagemRetorno](docs/NfseMensagemRetorno.md)
  - [NfsePedidoCancelamento](docs/NfsePedidoCancelamento.md)
- - [NfsePedidoEmissao](docs/NfsePedidoEmissao.md)
  - [NfsePedidoSincronizacao](docs/NfsePedidoSincronizacao.md)
  - [NfseSincronizacao](docs/NfseSincronizacao.md)
  - [RTCInfoDest](docs/RTCInfoDest.md)
@@ -1041,11 +1038,8 @@ Classe | Método | Requisição HTTP | Descrição
  - [RpsDadosTomador](docs/RpsDadosTomador.md)
  - [RpsDadosTomadorEndereco](docs/RpsDadosTomadorEndereco.md)
  - [RpsIdentificacao](docs/RpsIdentificacao.md)
- - [RpsIdentificacaoPrestador](docs/RpsIdentificacaoPrestador.md)
  - [RpsLote](docs/RpsLote.md)
  - [RpsLoteListagem](docs/RpsLoteListagem.md)
- - [RpsPedidoEmissao](docs/RpsPedidoEmissao.md)
- - [RpsPedidoEmissaoLote](docs/RpsPedidoEmissaoLote.md)
  - [RpsServicoValores](docs/RpsServicoValores.md)
  - [Serv](docs/Serv.md)
  - [Substituicao](docs/Substituicao.md)

@@ -710,7 +710,6 @@ acbrapi_sdk/models/nfse_listagem.py
 acbrapi_sdk/models/nfse_lote_dps_pedido_emissao.py
 acbrapi_sdk/models/nfse_mensagem_retorno.py
 acbrapi_sdk/models/nfse_pedido_cancelamento.py
-acbrapi_sdk/models/nfse_pedido_emissao.py
 acbrapi_sdk/models/nfse_pedido_sincronizacao.py
 acbrapi_sdk/models/nfse_sincronizacao.py
 acbrapi_sdk/models/reg_trib.py
@@ -723,11 +722,8 @@ acbrapi_sdk/models/rps_dados_servico.py
 acbrapi_sdk/models/rps_dados_tomador.py
 acbrapi_sdk/models/rps_dados_tomador_endereco.py
 acbrapi_sdk/models/rps_identificacao.py
-acbrapi_sdk/models/rps_identificacao_prestador.py
 acbrapi_sdk/models/rps_lote.py
 acbrapi_sdk/models/rps_lote_listagem.py
-acbrapi_sdk/models/rps_pedido_emissao.py
-acbrapi_sdk/models/rps_pedido_emissao_lote.py
 acbrapi_sdk/models/rps_servico_valores.py
 acbrapi_sdk/models/rtc_info_dest.py
 acbrapi_sdk/models/rtc_info_ibscbs.py
@@ -1456,7 +1452,6 @@ docs/NfseListagem.md
 docs/NfseLoteDpsPedidoEmissao.md
 docs/NfseMensagemRetorno.md
 docs/NfsePedidoCancelamento.md
-docs/NfsePedidoEmissao.md
 docs/NfsePedidoSincronizacao.md
 docs/NfseSincronizacao.md
 docs/RTCInfoDest.md
@@ -1483,11 +1478,8 @@ docs/RpsDadosServico.md
 docs/RpsDadosTomador.md
 docs/RpsDadosTomadorEndereco.md
 docs/RpsIdentificacao.md
-docs/RpsIdentificacaoPrestador.md
 docs/RpsLote.md
 docs/RpsLoteListagem.md
-docs/RpsPedidoEmissao.md
-docs/RpsPedidoEmissaoLote.md
 docs/RpsServicoValores.md
 docs/Serv.md
 docs/Substituicao.md

@@ -318,6 +318,7 @@ Classe | Método | Requisição HTTP | Descrição
 *NfseApi* | [**consultar_nfse**](docs/NfseApi.md#consultar_nfse) | **GET** /nfse/{id} | Consultar NFS-e
 *NfseApi* | [**emitir_lote_nfse_dps**](docs/NfseApi.md#emitir_lote_nfse_dps) | **POST** /nfse/dps/lotes | Emitir lote de NFS-e
 *NfseApi* | [**emitir_nfse_dps**](docs/NfseApi.md#emitir_nfse_dps) | **POST** /nfse/dps | Emitir NFS-e
+*NfseApi* | [**enviar_email_nfse**](docs/NfseApi.md#enviar_email_nfse) | **POST** /nfse/{id}/email | Enviar e-mail
 *NfseApi* | [**listar_lotes_nfse**](docs/NfseApi.md#listar_lotes_nfse) | **GET** /nfse/lotes | Listar lotes de NFS-e
 *NfseApi* | [**listar_nfse**](docs/NfseApi.md#listar_nfse) | **GET** /nfse | Listar NFS-e
 *NfseApi* | [**sincronizar_nfse**](docs/NfseApi.md#sincronizar_nfse) | **POST** /nfse/{id}/sincronizar | Sincroniza dados na NFS-e a partir da Prefeitura
@@ -791,6 +792,7 @@ Classe | Método | Requisição HTTP | Descrição
  - [MdfeSefazVeicReboque](docs/MdfeSefazVeicReboque.md)
  - [MdfeSefazVeicReboqueProp](docs/MdfeSefazVeicReboqueProp.md)
  - [MdfeSefazVeicTracao](docs/MdfeSefazVeicTracao.md)
+ - [NfcePedidoCancelamento](docs/NfcePedidoCancelamento.md)
  - [NfcomPedidoCancelamento](docs/NfcomPedidoCancelamento.md)
  - [NfcomPedidoEmissao](docs/NfcomPedidoEmissao.md)
  - [NfcomSefazALCZFMCBS](docs/NfcomSefazALCZFMCBS.md)

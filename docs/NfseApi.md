@@ -16,6 +16,7 @@ Método | Endpoint | Descrição
 [**consultar_nfse**](NfseApi.md#consultar_nfse) | **GET** /nfse/{id} | Consultar NFS-e
 [**emitir_lote_nfse_dps**](NfseApi.md#emitir_lote_nfse_dps) | **POST** /nfse/dps/lotes | Emitir lote de NFS-e
 [**emitir_nfse_dps**](NfseApi.md#emitir_nfse_dps) | **POST** /nfse/dps | Emitir NFS-e
+[**enviar_email_nfse**](NfseApi.md#enviar_email_nfse) | **POST** /nfse/{id}/email | Enviar e-mail
 [**listar_lotes_nfse**](NfseApi.md#listar_lotes_nfse) | **GET** /nfse/lotes | Listar lotes de NFS-e
 [**listar_nfse**](NfseApi.md#listar_nfse) | **GET** /nfse | Listar NFS-e
 [**sincronizar_nfse**](NfseApi.md#sincronizar_nfse) | **POST** /nfse/{id}/sincronizar | Sincroniza dados na NFS-e a partir da Prefeitura
@@ -878,6 +879,85 @@ Nome | Tipo | Descrição  | Comentários
 ### Tipo do retorno
 
 [**Nfse**](Nfse.md)
+
+### Autorização
+
+[oauth2](../README.md#oauth2)
+
+### Headers HTTP da requisição
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### Respostas HTTP
+| Código | Descrição | Headers da resposta |
+|-------------|-------------|------------------|
+**200** | Successful response |  -  |
+
+[[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
+
+# **enviar_email_nfse**
+> EmailStatusResponse enviar_email_nfse(id, logotipo=logotipo, mensagem_rodape=mensagem_rodape, body=body)
+
+Enviar e-mail
+
+Envia o XML e PDF da nota via email.    **Informações adicionais**:  - Consumo: 1 unidade por requisição.
+
+### Exemplo
+
+* Autenticação OAuth (oauth2):
+```python
+from __future__ import print_function
+import time
+import acbrapi_sdk
+from acbrapi_sdk.rest import ApiException
+from pprint import pprint
+# Definir o host e opcional; o padrao e https://prod.acbr.api.br
+# Veja configuration.py para a lista de parametros de configuracao suportados.
+configuration = acbrapi_sdk.Configuration(
+    host = "https://prod.acbr.api.br"
+)
+
+# O cliente deve configurar os parametros de autenticacao e autorizacao
+# de acordo com a politica de seguranca do servidor da API.
+# Abaixo ha exemplos para cada metodo de autenticacao; use o que
+# atende ao seu caso de uso.
+
+# Configura o token de acesso OAuth2 para autorizacao: oauth2
+configuration = acbrapi_sdk.Configuration(
+    host = "https://prod.acbr.api.br"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Abre um contexto com uma instancia do cliente da API
+with acbrapi_sdk.ApiClient(configuration) as api_client:
+    # Cria uma instancia da classe da API
+    api_instance = acbrapi_sdk.NfseApi(api_client)
+    id = 'id_example' # str | ID único da NFS-e gerado pela API.
+logotipo = False # bool | Imprime o documento com logotipo, desde que esteja cadastrado na empresa. (opcional) (default False)
+mensagem_rodape = 'mensagem_rodape_example' # str | Imprime mensagem no rodapé do documento.    O caractere `|` (pipe) poderá ser utilizado para definir a quantidade e o alinhamento das mensagens.    **Exemplos de Uso:**  * `\"esquerda\"`  * `\"esquerda|centro\"`  * `\"esquerda|centro|direita\"`  * `\"|centro\"`, `\"|centro|\"`  * `\"|centro|direita\"`  * `\"||direita\"`  * `\"esquerda||direita\"`    Default: `\"\"` (opcional)
+body = acbrapi_sdk.DfePedidoEnvioEmail() # DfePedidoEnvioEmail |  (opcional)
+
+    try:
+        # Enviar e-mail
+        api_response = api_instance.enviar_email_nfse(id, logotipo=logotipo, mensagem_rodape=mensagem_rodape, body=body)
+        pprint(api_response)
+    except ApiException as e:
+        print("Excecao ao chamar NfseApi->enviar_email_nfse: %s\n" % e)
+```
+
+### Parâmetros
+
+Nome | Tipo | Descrição  | Comentários
+------------- | ------------- | ------------- | -------------
+ **id** | **str**| ID único da NFS-e gerado pela API. | 
+ **logotipo** | **bool**| Imprime o documento com logotipo, desde que esteja cadastrado na empresa. | [opcional] [default False]
+ **mensagem_rodape** | **str**| Imprime mensagem no rodapé do documento.    O caractere &#x60;|&#x60; (pipe) poderá ser utilizado para definir a quantidade e o alinhamento das mensagens.    **Exemplos de Uso:**  * &#x60;\&quot;esquerda\&quot;&#x60;  * &#x60;\&quot;esquerda|centro\&quot;&#x60;  * &#x60;\&quot;esquerda|centro|direita\&quot;&#x60;  * &#x60;\&quot;|centro\&quot;&#x60;, &#x60;\&quot;|centro|\&quot;&#x60;  * &#x60;\&quot;|centro|direita\&quot;&#x60;  * &#x60;\&quot;||direita\&quot;&#x60;  * &#x60;\&quot;esquerda||direita\&quot;&#x60;    Default: &#x60;\&quot;\&quot;&#x60; | [opcional] 
+ **body** | [**DfePedidoEnvioEmail**](DfePedidoEnvioEmail.md)|  | [opcional] 
+
+### Tipo do retorno
+
+[**EmailStatusResponse**](EmailStatusResponse.md)
 
 ### Autorização
 

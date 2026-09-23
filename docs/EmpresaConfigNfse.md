@@ -6,8 +6,9 @@
 Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **reg_trib** | [**EmpresaConfigNfseRegTrib**](EmpresaConfigNfseRegTrib.md) |  | [opcional] 
-**rps** | [**EmpresaConfigRps**](EmpresaConfigRps.md) |  | 
+**rps** | [**EmpresaConfigRps**](EmpresaConfigRps.md) |  | [opcional] 
 **prefeitura** | [**EmpresaConfigPrefeitura**](EmpresaConfigPrefeitura.md) |  | [opcional] 
+**numeracao_automatica** | **bool** | Indicador para que a API controle a numeração da NFSe. | [opcional] [default True]
 **incentivo_fiscal** | **bool** | Indicador se a empresa possui algum tipo de incentivo fiscal. | [opcional] [default False]
 **ambiente** | **str** | Indica se a empresa irá emitir em produção ou homologação. | 
 

@@ -1047,7 +1047,7 @@ with acbrapi_sdk.ApiClient(configuration) as api_client:
     # Cria uma instancia da classe da API
     api_instance = acbrapi_sdk.NfceApi(api_client)
     id = 'id_example' # str | ID único da NFC-e gerado pela API.
-body = acbrapi_sdk.NfePedidoCancelamento() # NfePedidoCancelamento |  (opcional)
+body = acbrapi_sdk.NfcePedidoCancelamento() # NfcePedidoCancelamento |  (opcional)
 
     try:
         # Cancelar uma NFC-e autorizada
@@ -1062,7 +1062,7 @@ body = acbrapi_sdk.NfePedidoCancelamento() # NfePedidoCancelamento |  (opcional)
 Nome | Tipo | Descrição  | Comentários
 ------------- | ------------- | ------------- | -------------
  **id** | **str**| ID único da NFC-e gerado pela API. | 
- **body** | [**NfePedidoCancelamento**](NfePedidoCancelamento.md)|  | [opcional] 
+ **body** | [**NfcePedidoCancelamento**](NfcePedidoCancelamento.md)|  | [opcional] 
 
 ### Tipo do retorno
 

@@ -489,6 +489,7 @@ acbrapi_sdk/models/mdfe_sefaz_vale_ped.py
 acbrapi_sdk/models/mdfe_sefaz_veic_reboque.py
 acbrapi_sdk/models/mdfe_sefaz_veic_reboque_prop.py
 acbrapi_sdk/models/mdfe_sefaz_veic_tracao.py
+acbrapi_sdk/models/nfce_pedido_cancelamento.py
 acbrapi_sdk/models/nfcom_pedido_cancelamento.py
 acbrapi_sdk/models/nfcom_pedido_emissao.py
 acbrapi_sdk/models/nfcom_sefaz_alczfmcbs.py
@@ -1228,6 +1229,7 @@ docs/MdfeSefazVeicReboque.md
 docs/MdfeSefazVeicReboqueProp.md
 docs/MdfeSefazVeicTracao.md
 docs/NfceApi.md
+docs/NfcePedidoCancelamento.md
 docs/NfcomApi.md
 docs/NfcomPedidoCancelamento.md
 docs/NfcomPedidoEmissao.md

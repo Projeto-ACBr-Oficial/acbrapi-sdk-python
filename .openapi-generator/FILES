@@ -730,6 +730,10 @@ acbrapi_sdk/models/rtc_info_dest.py
 acbrapi_sdk/models/rtc_info_ibscbs.py
 acbrapi_sdk/models/rtc_info_imovel.py
 acbrapi_sdk/models/rtc_info_ree_rep_res.py
+acbrapi_sdk/models/rtc_info_tributos_abrasf.py
+acbrapi_sdk/models/rtc_info_tributos_abrasf_fed.py
+acbrapi_sdk/models/rtc_info_tributos_abrasf_mun.py
+acbrapi_sdk/models/rtc_info_tributos_abrasf_uf.py
 acbrapi_sdk/models/rtc_info_tributos_dif.py
 acbrapi_sdk/models/rtc_info_tributos_ibscbs.py
 acbrapi_sdk/models/rtc_info_tributos_sit_clas.py
@@ -1460,6 +1464,10 @@ docs/RTCInfoDest.md
 docs/RTCInfoIBSCBS.md
 docs/RTCInfoImovel.md
 docs/RTCInfoReeRepRes.md
+docs/RTCInfoTributosAbrasf.md
+docs/RTCInfoTributosAbrasfFed.md
+docs/RTCInfoTributosAbrasfMun.md
+docs/RTCInfoTributosAbrasfUF.md
 docs/RTCInfoTributosDif.md
 docs/RTCInfoTributosIBSCBS.md
 docs/RTCInfoTributosSitClas.md

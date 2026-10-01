@@ -1,0 +1,16 @@
+# RTCInfoTributosAbrasfUF
+
+Grupo de informações relativas aos valores do IBS estadual.
+
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**p_ibsuf** | **float** | Alíquota da UF para IBS. | [opcional] 
+**p_red_aliq_uf** | **float** | Percentual de redução de alíquota estadual. | [opcional] 
+**p_aliq_efet_uf** | **float** | Alíquota efetiva do IBS estadual.  pAliqEfetUF &#x3D; pIBSUF x (1 - pRedAliqUF) x (1 - pRedutor) | [opcional] 
+**v_ibsuf** | **float** | Valor do IBS estadual (R$).  vIBSUF &#x3D; vBC x (pIBSUF ou pAliqEfetUF) | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
+
+

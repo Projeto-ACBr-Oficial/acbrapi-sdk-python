@@ -287,7 +287,7 @@ class NfseApi(object):
 
         path_params = {}
         if 'id' in local_var_params:
-            path_params['Id'] = local_var_params['id']  # noqa: E501
+            path_params['id'] = local_var_params['id']  # noqa: E501
 
         query_params = []
 
@@ -309,7 +309,7 @@ class NfseApi(object):
         }
 
         return self.api_client.call_api(
-            '/nfse/{Id}/cancelamento/xml', 'GET',
+            '/nfse/{id}/cancelamento/xml', 'GET',
             path_params,
             query_params,
             header_params,

@@ -5,7 +5,7 @@ Todas as URIs relativas a *https://prod.acbr.api.br*
 Método | Endpoint | Descrição
 ------------- | ------------- | -------------
 [**baixar_pdf_nfse**](NfseApi.md#baixar_pdf_nfse) | **GET** /nfse/{id}/pdf | Baixar PDF do DANFSE
-[**baixar_xml_cancelamento_nfse**](NfseApi.md#baixar_xml_cancelamento_nfse) | **GET** /nfse/{Id}/cancelamento/xml | Baixar XML do evento de cancelamento
+[**baixar_xml_cancelamento_nfse**](NfseApi.md#baixar_xml_cancelamento_nfse) | **GET** /nfse/{id}/cancelamento/xml | Baixar XML do evento de cancelamento
 [**baixar_xml_dps**](NfseApi.md#baixar_xml_dps) | **GET** /nfse/{id}/xml/dps | Baixar XML da DPS
 [**baixar_xml_nfse**](NfseApi.md#baixar_xml_nfse) | **GET** /nfse/{id}/xml | Baixar XML da NFS-e processada
 [**cancelar_nfse**](NfseApi.md#cancelar_nfse) | **POST** /nfse/{id}/cancelamento | Cancelar uma NFS-e autorizada

@@ -216,7 +216,7 @@ Este endpoint não usa parâmetros.
 [[Voltar ao topo]](#) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar ao README]](../README.md)
 
 # **listar_extrato_creditos_conta**
-> ContaExtratoCreditoListagem listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit)
+> ContaExtratoCreditoListagem listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit, client_id=client_id, incluir_isentos=incluir_isentos)
 
 Consultar o extrato de movimentação de créditos do tenant atual.
 
@@ -255,10 +255,12 @@ data_final = 'data_final_example' # str |  (opcional)
 top = 56 # int |  (opcional)
 skip = 56 # int |  (opcional)
 limit = 56 # int |  (opcional)
+client_id = 'client_id_example' # str |  (opcional)
+incluir_isentos = True # bool |  (opcional)
 
     try:
         # Consultar o extrato de movimentação de créditos do tenant atual.
-        api_response = api_instance.listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit)
+        api_response = api_instance.listar_extrato_creditos_conta(data_inicial=data_inicial, data_final=data_final, top=top, skip=skip, limit=limit, client_id=client_id, incluir_isentos=incluir_isentos)
         pprint(api_response)
     except ApiException as e:
         print("Excecao ao chamar ContaApi->listar_extrato_creditos_conta: %s\n" % e)
@@ -273,6 +275,8 @@ Nome | Tipo | Descrição  | Comentários
  **top** | **int**|  | [opcional] 
  **skip** | **int**|  | [opcional] 
  **limit** | **int**|  | [opcional] 
+ **client_id** | **str**|  | [opcional] 
+ **incluir_isentos** | **bool**|  | [opcional] 
 
 ### Tipo do retorno
 

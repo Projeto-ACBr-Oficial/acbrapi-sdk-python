@@ -44,7 +44,12 @@ class ContaExtratoCredito(object):
         'document_id': 'str',
         'arquivo_id': 'str',
         'http_method': 'str',
-        'uri': 'str'
+        'uri': 'str',
+        'client_id': 'str',
+        'origin': 'str',
+        'resource_type': 'str',
+        'resource_id': 'str',
+        'request_id': 'str'
     }
 
     attribute_map = {
@@ -56,10 +61,15 @@ class ContaExtratoCredito(object):
         'document_id': 'document_id',
         'arquivo_id': 'arquivo_id',
         'http_method': 'http_method',
-        'uri': 'uri'
+        'uri': 'uri',
+        'client_id': 'client_id',
+        'origin': 'origin',
+        'resource_type': 'resource_type',
+        'resource_id': 'resource_id',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, tenant_id=None, created_at=None, quota_name=None, movement_type=None, credits=None, document_id=None, arquivo_id=None, http_method=None, uri=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, tenant_id=None, created_at=None, quota_name=None, movement_type=None, credits=None, document_id=None, arquivo_id=None, http_method=None, uri=None, client_id=None, origin=None, resource_type=None, resource_id=None, request_id=None, local_vars_configuration=None):  # noqa: E501
         """ContaExtratoCredito - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration.get_default_copy()
@@ -74,6 +84,11 @@ class ContaExtratoCredito(object):
         self._arquivo_id = None
         self._http_method = None
         self._uri = None
+        self._client_id = None
+        self._origin = None
+        self._resource_type = None
+        self._resource_id = None
+        self._request_id = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -94,6 +109,16 @@ class ContaExtratoCredito(object):
             self.http_method = http_method
         if uri is not None:
             self.uri = uri
+        if client_id is not None:
+            self.client_id = client_id
+        if origin is not None:
+            self.origin = origin
+        if resource_type is not None:
+            self.resource_type = resource_type
+        if resource_id is not None:
+            self.resource_id = resource_id
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def tenant_id(self):
@@ -283,6 +308,111 @@ class ContaExtratoCredito(object):
         """
 
         self._uri = uri
+
+    @property
+    def client_id(self):
+        """Gets the client_id of this ContaExtratoCredito.  # noqa: E501
+
+
+        :return: The client_id of this ContaExtratoCredito.  # noqa: E501
+        :rtype: str
+        """
+        return self._client_id
+
+    @client_id.setter
+    def client_id(self, client_id):
+        """Sets the client_id of this ContaExtratoCredito.
+
+
+        :param client_id: The client_id of this ContaExtratoCredito.  # noqa: E501
+        :type client_id: str
+        """
+
+        self._client_id = client_id
+
+    @property
+    def origin(self):
+        """Gets the origin of this ContaExtratoCredito.  # noqa: E501
+
+
+        :return: The origin of this ContaExtratoCredito.  # noqa: E501
+        :rtype: str
+        """
+        return self._origin
+
+    @origin.setter
+    def origin(self, origin):
+        """Sets the origin of this ContaExtratoCredito.
+
+
+        :param origin: The origin of this ContaExtratoCredito.  # noqa: E501
+        :type origin: str
+        """
+
+        self._origin = origin
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this ContaExtratoCredito.  # noqa: E501
+
+
+        :return: The resource_type of this ContaExtratoCredito.  # noqa: E501
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this ContaExtratoCredito.
+
+
+        :param resource_type: The resource_type of this ContaExtratoCredito.  # noqa: E501
+        :type resource_type: str
+        """
+
+        self._resource_type = resource_type
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this ContaExtratoCredito.  # noqa: E501
+
+
+        :return: The resource_id of this ContaExtratoCredito.  # noqa: E501
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this ContaExtratoCredito.
+
+
+        :param resource_id: The resource_id of this ContaExtratoCredito.  # noqa: E501
+        :type resource_id: str
+        """
+
+        self._resource_id = resource_id
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ContaExtratoCredito.  # noqa: E501
+
+
+        :return: The request_id of this ContaExtratoCredito.  # noqa: E501
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ContaExtratoCredito.
+
+
+        :param request_id: The request_id of this ContaExtratoCredito.  # noqa: E501
+        :type request_id: str
+        """
+
+        self._request_id = request_id
 
     def to_dict(self, serialize=False):
         """Returns the model properties as a dict"""

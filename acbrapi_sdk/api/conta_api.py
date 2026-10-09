@@ -440,6 +440,10 @@ class ContaApi(object):
         :type skip: int
         :param limit:
         :type limit: int
+        :param client_id:
+        :type client_id: str
+        :param incluir_isentos:
+        :type incluir_isentos: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -477,6 +481,10 @@ class ContaApi(object):
         :type skip: int
         :param limit:
         :type limit: int
+        :param client_id:
+        :type client_id: str
+        :param incluir_isentos:
+        :type incluir_isentos: bool
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -508,7 +516,9 @@ class ContaApi(object):
             'data_final',
             'top',
             'skip',
-            'limit'
+            'limit',
+            'client_id',
+            'incluir_isentos'
         ]
         all_params.extend(
             [
@@ -546,6 +556,10 @@ class ContaApi(object):
             query_params.append(('skip', local_var_params['skip']))  # noqa: E501
         if local_var_params.get('limit') is not None:  # noqa: E501
             query_params.append(('limit', local_var_params['limit']))  # noqa: E501
+        if local_var_params.get('client_id') is not None:  # noqa: E501
+            query_params.append(('client_id', local_var_params['client_id']))  # noqa: E501
+        if local_var_params.get('incluir_isentos') is not None:  # noqa: E501
+            query_params.append(('incluir_isentos', local_var_params['incluir_isentos']))  # noqa: E501
 
         header_params = dict(local_var_params.get('_headers', {}))
 

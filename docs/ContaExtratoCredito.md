@@ -14,6 +14,11 @@ Nome | Tipo | Descrição | Comentários
 **arquivo_id** | **str** |  | [opcional] 
 **http_method** | **str** |  | [opcional] 
 **uri** | **str** |  | [opcional] 
+**client_id** | **str** |  | [opcional] 
+**origin** | **str** |  | [opcional] 
+**resource_type** | **str** |  | [opcional] 
+**resource_id** | **str** |  | [opcional] 
+**request_id** | **str** |  | [opcional] 
 
 [[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
 

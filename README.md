@@ -307,7 +307,7 @@ Classe | Método | Requisição HTTP | Descrição
 *NfeApi* | [**listar_nfe**](docs/NfeApi.md#listar_nfe) | **GET** /nfe | Listar NF-e
 *NfeApi* | [**sincronizar_nfe**](docs/NfeApi.md#sincronizar_nfe) | **POST** /nfe/{id}/sincronizar | Sincroniza dados na NF-e a partir da SEFAZ
 *NfseApi* | [**baixar_pdf_nfse**](docs/NfseApi.md#baixar_pdf_nfse) | **GET** /nfse/{id}/pdf | Baixar PDF do DANFSE
-*NfseApi* | [**baixar_xml_cancelamento_nfse**](docs/NfseApi.md#baixar_xml_cancelamento_nfse) | **GET** /nfse/{Id}/cancelamento/xml | Baixar XML do evento de cancelamento
+*NfseApi* | [**baixar_xml_cancelamento_nfse**](docs/NfseApi.md#baixar_xml_cancelamento_nfse) | **GET** /nfse/{id}/cancelamento/xml | Baixar XML do evento de cancelamento
 *NfseApi* | [**baixar_xml_dps**](docs/NfseApi.md#baixar_xml_dps) | **GET** /nfse/{id}/xml/dps | Baixar XML da DPS
 *NfseApi* | [**baixar_xml_nfse**](docs/NfseApi.md#baixar_xml_nfse) | **GET** /nfse/{id}/xml | Baixar XML da NFS-e processada
 *NfseApi* | [**cancelar_nfse**](docs/NfseApi.md#cancelar_nfse) | **POST** /nfse/{id}/cancelamento | Cancelar uma NFS-e autorizada

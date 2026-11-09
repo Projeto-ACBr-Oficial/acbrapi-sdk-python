@@ -1,6 +1,6 @@
 # InfoDedRed
 
-Grupo de informações relativas ao valores para dedução/redução do valor da base de cálculo (valor do serviço).
+`Deprecated`    **Propriedade depreciada** a partir da NT 009 (leiaute 009.1.01).    *Utilize `valores.vAjusteBC`*.  Grupo de informações relativas ao valores para dedução/redução do valor da base de cálculo (valor do serviço).
 
 ## Propriedades
 

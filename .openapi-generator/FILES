@@ -362,6 +362,7 @@ acbrapi_sdk/models/distribuicao_nfe_nota.py
 acbrapi_sdk/models/distribuicao_nfe_nota_listagem.py
 acbrapi_sdk/models/distribuicao_nfe_pedido.py
 acbrapi_sdk/models/distribuicao_nfe_pedido_manifestacao.py
+acbrapi_sdk/models/doc_ajuste_bc.py
 acbrapi_sdk/models/doc_ded_red.py
 acbrapi_sdk/models/doc_nfnfs.py
 acbrapi_sdk/models/doc_out_nfse.py
@@ -393,6 +394,7 @@ acbrapi_sdk/models/empresa_listagem.py
 acbrapi_sdk/models/empresa_pedido_cadastro_certificado.py
 acbrapi_sdk/models/ender_ext.py
 acbrapi_sdk/models/ender_ext_simples.py
+acbrapi_sdk/models/ender_imovel.py
 acbrapi_sdk/models/ender_nac.py
 acbrapi_sdk/models/ender_obra_evento.py
 acbrapi_sdk/models/endereco.py
@@ -401,6 +403,7 @@ acbrapi_sdk/models/endereco_simples.py
 acbrapi_sdk/models/exig_suspensa.py
 acbrapi_sdk/models/http_request_debug.py
 acbrapi_sdk/models/inf_dps.py
+acbrapi_sdk/models/info_ajuste_bc.py
 acbrapi_sdk/models/info_compl.py
 acbrapi_sdk/models/info_ded_red.py
 acbrapi_sdk/models/info_fornec_doc_ded_red.py
@@ -412,6 +415,7 @@ acbrapi_sdk/models/info_ref_nfse.py
 acbrapi_sdk/models/info_tomador.py
 acbrapi_sdk/models/info_tributacao.py
 acbrapi_sdk/models/info_valores.py
+acbrapi_sdk/models/lista_doc_ajuste_bc.py
 acbrapi_sdk/models/lista_doc_ded_red.py
 acbrapi_sdk/models/loc_prest.py
 acbrapi_sdk/models/manifestacao_nfe_listagem.py
@@ -742,6 +746,7 @@ acbrapi_sdk/models/rps_identificacao.py
 acbrapi_sdk/models/rps_lote.py
 acbrapi_sdk/models/rps_lote_listagem.py
 acbrapi_sdk/models/rps_servico_valores.py
+acbrapi_sdk/models/rtc_info_bens_moveis.py
 acbrapi_sdk/models/rtc_info_dest.py
 acbrapi_sdk/models/rtc_info_ibscbs.py
 acbrapi_sdk/models/rtc_info_imovel.py
@@ -760,6 +765,9 @@ acbrapi_sdk/models/rtc_lista_doc_dfe.py
 acbrapi_sdk/models/rtc_lista_doc_fiscal_outro.py
 acbrapi_sdk/models/rtc_lista_doc_fornec.py
 acbrapi_sdk/models/rtc_lista_doc_outro.py
+acbrapi_sdk/models/rtc_locacao_imovel.py
+acbrapi_sdk/models/rtc_unidades_imobiliarias.py
+acbrapi_sdk/models/rtc_valores_bc_imoveis.py
 acbrapi_sdk/models/serv.py
 acbrapi_sdk/models/substituicao.py
 acbrapi_sdk/models/trib_federal.py
@@ -1119,6 +1127,7 @@ docs/DistribuicaoNfeNotaListagem.md
 docs/DistribuicaoNfePedido.md
 docs/DistribuicaoNfePedidoManifestacao.md
 docs/DistribuioNFEApi.md
+docs/DocAjusteBC.md
 docs/DocDedRed.md
 docs/DocNFNFS.md
 docs/DocOutNFSe.md
@@ -1151,6 +1160,7 @@ docs/EmpresaListagem.md
 docs/EmpresaPedidoCadastroCertificado.md
 docs/EnderExt.md
 docs/EnderExtSimples.md
+docs/EnderImovel.md
 docs/EnderNac.md
 docs/EnderObraEvento.md
 docs/Endereco.md
@@ -1159,6 +1169,7 @@ docs/EnderecoSimples.md
 docs/ExigSuspensa.md
 docs/HttpRequestDebug.md
 docs/InfDPS.md
+docs/InfoAjusteBC.md
 docs/InfoCompl.md
 docs/InfoDedRed.md
 docs/InfoFornecDocDedRed.md
@@ -1170,6 +1181,7 @@ docs/InfoRefNFSe.md
 docs/InfoTomador.md
 docs/InfoTributacao.md
 docs/InfoValores.md
+docs/ListaDocAjusteBC.md
 docs/ListaDocDedRed.md
 docs/LocPrest.md
 docs/ManifestacaoNfeListagem.md
@@ -1492,6 +1504,7 @@ docs/NfseMensagemRetorno.md
 docs/NfsePedidoCancelamento.md
 docs/NfsePedidoSincronizacao.md
 docs/NfseSincronizacao.md
+docs/RTCInfoBensMoveis.md
 docs/RTCInfoDest.md
 docs/RTCInfoIBSCBS.md
 docs/RTCInfoImovel.md
@@ -1510,6 +1523,9 @@ docs/RTCListaDocDFe.md
 docs/RTCListaDocFiscalOutro.md
 docs/RTCListaDocFornec.md
 docs/RTCListaDocOutro.md
+docs/RTCLocacaoImovel.md
+docs/RTCUnidadesImobiliarias.md
+docs/RTCValoresBCImoveis.md
 docs/RegTrib.md
 docs/Rps.md
 docs/RpsDados.md

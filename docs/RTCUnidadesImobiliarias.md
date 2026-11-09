@@ -1,0 +1,16 @@
+# RTCUnidadesImobiliarias
+
+Grupo de informações relativas às unidades imobiliárias objeto da operação.  *Disponível a partir da NT 009 (leiaute 009.1.01).*
+
+## Propriedades
+
+Nome | Tipo | Descrição | Comentários
+------------ | ------------- | ------------- | -------------
+**insc_imob_fisc** | **str** | Inscrição imobiliária fiscal (código fornecido pela Prefeitura Municipal para a identificação da obra ou para fins de recolhimento do IPTU). | [opcional] 
+**c_cib** | **str** | Código do Cadastro Imobiliário Brasileiro - CIB. | [opcional] 
+**end** | [**EnderImovel**](EnderImovel.md) |  | [opcional] 
+**g_ajuste_bc_loc_imoveis** | [**list[RTCValoresBCImoveis]**](RTCValoresBCImoveis.md) |  | [opcional] 
+
+[[Voltar à lista de DTOs]](../README.md#documentation-for-models) [[Voltar à listagem da API]](../README.md#documentation-for-api-endpoints) [[Voltar ao README]](../README.md)
+
+

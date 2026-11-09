@@ -8,6 +8,7 @@ Nome | Tipo | Descrição | Comentários
 ------------ | ------------- | ------------- | -------------
 **v_serv_prest** | [**VServPrest**](VServPrest.md) |  | 
 **v_desc_cond_incond** | [**VDescCondIncond**](VDescCondIncond.md) |  | [opcional] 
+**v_ajuste_bc** | [**InfoAjusteBC**](InfoAjusteBC.md) |  | [opcional] 
 **v_ded_red** | [**InfoDedRed**](InfoDedRed.md) |  | [opcional] 
 **trib** | [**InfoTributacao**](InfoTributacao.md) |  | 
 

@@ -1,6 +1,6 @@
 # RTCInfoReeRepRes
 
-Grupo de informações relativas a valores incluídos neste documento e recebidos por motivo de estarem relacionadas  a operações de terceiros, objeto de reembolso, repasse ou ressarcimento pelo recebedor, já tributados e aqui referenciados.
+`Deprecated`    **Propriedade depreciada** a partir da NT 009 (leiaute 009.1.01).    *Utilize `valores.vAjusteBC.documentos` (tipos de ajuste 101 a 104 e 199)*.  Grupo de informações relativas a valores incluídos neste documento e recebidos por motivo de estarem relacionadas  a operações de terceiros, objeto de reembolso, repasse ou ressarcimento pelo recebedor, já tributados e aqui referenciados.
 
 ## Propriedades
 
